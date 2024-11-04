@@ -1,0 +1,41 @@
+ul{
+    list-style: none;
+    font-size: 0;
+
+    ul{
+        position: absolute;
+        display: none;
+
+        li{
+            display: block;
+        }
+    }
+
+    li{
+        &:hover{
+            background-color: rgb(66, 14, 211);
+
+            ul{
+                display: block;
+                background-color: aquamarine;
+            
+            }
+
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+li{
+    display: inline-block;
+    width: 23%;
+    position: relative;
+    font-size: 14px;
+}
+.menu{
+    background-color: blue;
+    text-align: center;
+}
