@@ -8,7 +8,7 @@ ul {
     ul ul li {
       display: block; }
   ul li:hover {
-    background-color: #06174d; }
+    background-color: #000246; }
     ul li:hover ul {
       display: block;
       background-color: aquamarine; }
@@ -23,13 +23,13 @@ li {
   font-size: 14px; }
 
 .menu {
-  background-color: #06174d;
+  background-color: #000246;
   text-align: center; }
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
-  background-image: url(../assets/footer.jpg);
+  background-image: url(../assets/fondo.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,25 +47,23 @@ body {
   padding: 0; }
 
 #titulo {
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 .contenedor {
-  width: 800px;
-  max-width: 100%;
-  margin: 100px auto;
-  margin-top: 10px;
-  padding: 20px;
+  text-align: center;
+  display: flex;
+  width: 500px;
   display: grid;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
   grid-template-columns: repeat(3, 1fr);
-  gap: 1em; }
+  transform: translate(150%, -99%); }
 
 .hijo {
-  background-color: burlywood;
-  padding: 22px;
-  border: beige 1px solid;
+  display: flex;
+  padding: 5px;
   border-radius: 8px;
-  font-size: 1em;
+  font-size: 5px;
   cursor: pointer;
   text-align: center; }
 
@@ -89,18 +87,10 @@ body {
   grid-column: 1/4;
   display: flex; }
 
-.parte-5 {
-  background-color: #06174d;
-  grid-column: 1/4;
-  display: flex; }
-
-.parte-6 {
-  background-color: #06174d;
-  grid-column: 1/4;
-  display: flex; }
-
 #mejores {
-  width: 200px; }
+  width: 685px;
+  height: 400px;
+  display: flex; }
 
 #noticia {
   height: 80px;
@@ -110,6 +100,9 @@ body {
   margin-right: 30px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
   border-radius: 10%; }
+  #noticia:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease; }
 
 #tendencia {
   font-size: 20px;
@@ -118,21 +111,57 @@ body {
     color: gray; }
 
 footer {
-  background-image: url(../assets/fondo.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-  height: 400px; }
+  background-color: #000246; }
 
 h4 {
   margin-left: 20px;
   color: black; }
 
 .redes {
-  border-radius: 100%; }
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  transform: translate(-1400%, 300%); }
+
+.maintotal {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex; }
+
+#terminos {
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-top: 50px;
+  color: white;
+  position: absolute;
+  transform: translate(0%, -150px);
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center; }
+
+#imgfinal {
+  height: 600px;
+  width: 100%;
+  display: block; }
+
+#footer2 {
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  text-align: center;
+  position: relative; }
+
+#Siguenos {
+  transform: translate(-41%, 630%);
+  color: aliceblue; }
+
+#proximosPartidos {
+  height: 60px; }
 
 #logos {
   width: 50px;
