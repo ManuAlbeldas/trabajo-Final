@@ -34,9 +34,13 @@
     transform: translateX(-14px) translateY(10px);
 }
 
+h2{
+    color: white;
+}
+
 h4{
     font-size: 15px;
-    color: grey;
+    color: white;
 }
 
 h5{
@@ -121,3 +125,6 @@ input[type="checkbox"] {
     display: none;
 }
 
+#body-clasificacion{
+    background-image: url(../assets/fondo.png);
+}

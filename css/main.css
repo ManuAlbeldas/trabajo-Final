@@ -221,9 +221,12 @@ h4 {
   height: 40px;
   transform: translateX(-14px) translateY(10px); }
 
+h2 {
+  color: white; }
+
 h4 {
   font-size: 15px;
-  color: grey; }
+  color: white; }
 
 h5 {
   font-size: 15px;
@@ -299,3 +302,6 @@ input[type="checkbox"]:checked + .informacion {
 
 input[type="checkbox"] {
   display: none; }
+
+#body-clasificacion {
+  background-image: url(../assets/fondo.png); }
