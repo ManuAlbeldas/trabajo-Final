@@ -41,7 +41,7 @@ li {
   color: white; }
 
 .contenedor {
-  margin-left: 30px;
+  margin-left: 140px;
   text-align: center;
   width: 500px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
@@ -83,7 +83,7 @@ header {
   width: 685px;
   height: 400px;
   display: flex;
-  margin-left: 60px;
+  margin-left: 120px;
   margin-bottom: 40px;
   margin-top: 40px; }
 
@@ -176,22 +176,36 @@ h4 {
   transform: scale(1.1); }
 
 #carouselExampleIndicators {
-  background-color: transparent;
-  color: transparent;
+  text-align: center;
   overflow: hidden;
   height: 400px;
   margin: 0;
   padding: 0;
   background-color: #06174d;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   margin-bottom: 50px; }
 
 .card {
-  margin-left: 120px;
   margin-top: 50px;
   display: flex; }
+  .card h5, .card p {
+    color: white; }
+  .card .card-body {
+    background-color: black; }
+
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.carrusel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.carta {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
 
 #logos {
   width: 50px;
