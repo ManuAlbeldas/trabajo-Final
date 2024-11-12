@@ -4,10 +4,34 @@
     width: 50px;
     height: 50px;
 }
-#logo-monaco{
-    width: 30px;
+
+#logoMonaco{
+    width: 35px;
+    height: 50px;  
+    transform: translateX(10px);  
+}
+
+#logoBrest{
+    width: 50px;
     height: 50px;
-    transform: translateX(10px);
+}
+
+#logoAtalanta{
+    height: 80px;
+    width: 80px;
+    transform: translateX(-14px);
+}
+
+#logoBO4{
+    width: 80px;
+    height: 60px;
+    transform: translateX(-14px);
+}
+
+#logoBologna{
+    width: 80px;
+    height: 40px;
+    transform: translateX(-14px) translateY(10px);
 }
 
 h4{
@@ -22,9 +46,8 @@ h5{
 
 $partidos:(
     1: green,
-    2: green,
-    3: green,
-    4: green,
+    2: rgb(49, 49, 49),
+    3: red,
 ); 
 
 @each $num, $color in $partidos{
@@ -97,3 +120,4 @@ input[type="checkbox"]:checked + .informacion {
 input[type="checkbox"] {
     display: none;
 }
+
