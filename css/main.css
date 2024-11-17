@@ -236,11 +236,15 @@ h4 {
   transform: translateX(-14px) translateY(10px); }
 
 h2 {
-  color: white; }
+  color: white;
+  display: flex;
+  justify-content: center; }
 
 h4 {
   font-size: 15px;
-  color: white; }
+  color: white;
+  display: flex;
+  justify-content: center; }
 
 h5 {
   font-size: 15px;
@@ -318,4 +322,16 @@ input[type="checkbox"] {
   display: none; }
 
 #body-clasificacion {
-  background-image: url(../assets/fondo.png); }
+  background-image: url(../assets/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#nombre-equipo {
+  transform: translateY(20px);
+  font-size: 13   px; }
+
+#tabla {
+  width: 70%;
+  transform: translateX(220px); }

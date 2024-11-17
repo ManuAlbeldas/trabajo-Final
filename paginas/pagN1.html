@@ -4,6 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../assets/logo.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla y Clasificación</title>
@@ -22,25 +23,27 @@
       </header>
     <div class="row container-fluid">
         <div class="col-lg-12">
-            <table class="table">
-                <h2>Tabla de Fase de Liga</h2>
-                <h4>Avanzan a 16vos</h4>
+            <table id="tabla" class="table">
                 <tr>
+                    <h2>Tabla de Fase de Liga</h2>
+                    <h4><strong>Avanzan a 16vos</strong></h4>
                     <th></th>
-                    <th>Equipos</th>
-                    <th>Jugados</th>
-                    <th>Ganados</th>
-                    <th>Empatados</th>
-                    <th>Perdidos</th>
-                    <th>Goles a Favor</th>
-                    <th>Goles Recibidos</th>
-                    <th>Diferencia de Goles</th>
-                    <th>Puntos</th>
+                    <th></th>
+                    <th></th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PE</th>
+                    <th>PP</th>
+                    <th>GF</th>
+                    <th>GE</th>
+                    <th>DIF</th>
+                    <th>PTS</th>
                     <th>Partidos</th>
                 </tr>
                 <tr>
                     <th>1#</th>
                     <th><img id="logos" src="../assets/logoLiverpool.png" alt=""></th>
+                    <th><p id="nombre-equipo">Liverpool</p></th>
                     <th>4</th>
                     <th>4</th>
                     <th>0</th>
@@ -66,6 +69,7 @@
                 <tr>
                     <th>2#</th>
                     <th><img id="logos" src="../assets/logoLisboa.png" alt=""></th>
+                    <th><p id="nombre-equipo">Sporting CP</p></th>
                     <th>4</th>
                     <th>3</th>
                     <th>1</th>
@@ -91,6 +95,7 @@
                 <tr>
                     <th>3#</th>
                     <th><img id="logoMonaco" src="../assets/logoMonaco.png" alt=""></th>
+                    <th><p id="nombre-equipo">Monaco</p></th>
                     <th>4</th>
                     <th>3</th>
                     <th>1</th>
@@ -116,6 +121,7 @@
                 <tr>
                     <th>4#</th>
                     <th><img id="logoBrest" src="../assets/logoBrest.png" alt=""></th>
+                    <th><p id="nombre-equipo">Brest</p></th>
                     <th>4</th>
                     <th>3</th>
                     <th>1</th>
@@ -141,6 +147,7 @@
                 <tr>
                     <th>5#</th>
                     <th><img id="logos" src="../assets/logoInter.png" alt=""></th>
+                    <th><p id="nombre-equipo">Inter</p></th>
                     <th>4</th>
                     <th>3</th>
                     <th>1</th>
@@ -166,6 +173,7 @@
                 <tr>
                     <th>6#</th>
                     <th><img id="logos" src="../assets/logoBarca.png" alt=""></th>
+                    <th><p id="nombre-equipo">Barcelona</p></th>
                     <th>4</th>
                     <th>3</th>
                     <th>0</th>
@@ -191,6 +199,7 @@
                 <tr>
                     <th>7#</th>
                     <th><img id="logos" src="../assets/LogoBVB.png" alt=""></th>
+                    <th><p id="nombre-equipo">B. Dortmund</p></th>
                     <th>4</th>
                     <th>3</th>
                     <th>0</th>
@@ -216,6 +225,7 @@
                 <tr>
                     <th>8#</th>
                     <th><img id="logoMonaco" src="../assets/logoAstonVIlla.png" alt=""></th>
+                    <th><p id="nombre-equipo">Aston Villa</p></th>
                     <th>4</th>
                     <th>3</th>
                     <th>0</th>
@@ -239,24 +249,26 @@
                         </div></th>
                 </tr>
             </table> 
-            <table class="table">  
+            <table id="tabla" class="table">
                 <tr>
+                    <h4>PlayOffs</h4>
                     <th></th>
-                    <th>Equipos</th>
-                    <th>Jugados</th>
-                    <th>Ganados</th>
-                    <th>Empatados</th>
-                    <th>Perdidos</th>
-                    <th>Goles a Favor</th>
-                    <th>Goles Recibidos</th>
-                    <th>Diferencia de Goles</th>
-                    <th>Puntos</th>
+                    <th></th>
+                    <th></th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PE</th>
+                    <th>PP</th>
+                    <th>GF</th>
+                    <th>GE</th>
+                    <th>DIF</th>
+                    <th>PTS</th>
                     <th>Partidos</th>
-                </tr> 
-                <h4>PlayOffs</h4>
+                </tr>
                 <tr>
                     <th>9#</th>
                     <th><img id="logoAtalanta" src="../assets/logoAtalanta.png" alt=""></th>
+                    <th><p id="nombre-equipo">Atalanta</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>2</th>
@@ -282,6 +294,7 @@
                 <tr>
                     <th>10#</th>
                     <th><img id="logos" src="../assets/logoManCity.png" alt=""></th>
+                    <th><p id="nombre-equipo">Man City</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>1</th>
@@ -307,6 +320,7 @@
                 <tr>
                     <th>11#</th>
                     <th><img id="logos" src="../assets/logoJuve.png" alt=""></th>
+                    <th><p id="nombre-equipo">Juventus</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>1</th>
@@ -332,6 +346,7 @@
                 <tr>
                     <th>12#</th>
                     <th><img id="logos" src="../assets/logoArsenal.png" alt=""></th>
+                    <th><p id="nombre-equipo">Arsenal</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>1</th>
@@ -357,6 +372,7 @@
                 <tr>
                     <th>13#</th>
                     <th><img id="logoBO4" src="../assets/logoBO4.png" alt=""></th>
+                    <th><p id="nombre-equipo">Leverkusen</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>1</th>
@@ -382,6 +398,7 @@
                 <tr>
                     <th>14#</th>
                     <th><img id="logoBO4" src="../assets/logoLille.png" alt=""></th>
+                    <th><p id="nombre-equipo">Lille</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>1</th>
@@ -407,6 +424,7 @@
                 <tr>
                     <th>15#</th>
                     <th><img id="logoBO4" src="../assets/logoCeltic.png" alt=""></th>
+                    <th><p id="nombre-equipo">Celtic</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>1</th>
@@ -432,6 +450,7 @@
                 <tr>
                     <th>16#</th>
                     <th><img id="logos" src="../assets/logoDinamo.png" alt=""></th>
+                    <th><p id="nombre-equipo">GNK Dinamo</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>1</th>
@@ -457,6 +476,7 @@
                 <tr>
                     <th>17#</th>
                     <th><img id="logos" src="../assets/logoBayern.png" alt=""></th>
+                    <th><p id="nombre-equipo">Bayern München</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>0</th>
@@ -482,6 +502,7 @@
                 <tr>
                     <th>18#</th>
                     <th><img id="logos" src="../assets/logoReal.png" alt=""></th>
+                    <th><p id="nombre-equipo">Real Madrid</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>0</th>
@@ -507,6 +528,7 @@
                 <tr>
                     <th>19#</th>
                     <th><img id="logos" src="../assets/logoBenfica.png" alt=""></th>
+                    <th><p id="nombre-equipo">Benfica</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>0</th>
@@ -532,6 +554,7 @@
                 <tr>
                     <th>20#</th>
                     <th><img id="logoMonaco" src="../assets/logoACMilan.png" alt=""></th>
+                    <th><p id="nombre-equipo">Milan</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>0</th>
@@ -557,6 +580,7 @@
                 <tr>
                     <th>21#</th>
                     <th><img id="logos" src="../assets/LogoFeye.png" alt=""></th>
+                    <th><p id="nombre-equipo">Feyenoord</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>0</th>
@@ -582,6 +606,7 @@
                 <tr>
                     <th>22#</th>
                     <th><img id="logos" src="../assets/logoBrujas.png" alt=""></th>
+                    <th><p id="nombre-equipo">Club Brujas</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>0</th>
@@ -607,6 +632,7 @@
                 <tr>
                     <th>23#</th>
                     <th><img id="logoBO4" src="../assets/logoAtleti.png" alt=""></th>
+                    <th><p id="nombre-equipo">Atleti</p></th>
                     <th>4</th>
                     <th>2</th>
                     <th>0</th>
@@ -632,6 +658,7 @@
                 <tr>
                     <th>24#</th>
                     <th><img id="logoBO4" src="../assets/logoPSV.png" alt=""></th>
+                    <th><p id="nombre-equipo">PSV</p></th>
                     <th>4</th>
                     <th>1</th>
                     <th>2</th>
@@ -655,24 +682,26 @@
                         </div></th>
                 </tr>
             </table> 
-            <table class="table">
+            <table id="tabla" class="table">
                 <tr>
+                    <h4>Eliminados</h4>
                     <th></th>
-                    <th>Equipos</th>
-                    <th>Jugados</th>
-                    <th>Ganados</th>
-                    <th>Empatados</th>
-                    <th>Perdidos</th>
-                    <th>Goles a Favor</th>
-                    <th>Goles Recibidos</th>
-                    <th>Diferencia de Goles</th>
-                    <th>Puntos</th>
+                    <th></th>
+                    <th></th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PE</th>
+                    <th>PP</th>
+                    <th>GF</th>
+                    <th>GE</th>
+                    <th>DIF</th>
+                    <th>PTS</th>
                     <th>Partidos</th>
                 </tr>
-                <h4>Eliminados</h4>
                 <tr>
                     <th>25#</th>
                     <th><img id="logos" src="../assets/logoPSG.png" alt=""></th>
+                    <th><p id="nombre-equipo">Paris</p></th>
                     <th>4</th>
                     <th>1</th>
                     <th>1</th>
@@ -698,6 +727,7 @@
                 <tr>
                     <th>26#</th>
                     <th><img id="logos" src="../assets/logoSparta.png" alt=""></th>
+                    <th><p id="nombre-equipo">Sparta Praha</p></th>
                     <th>4</th>
                     <th>1</th>
                     <th>1</th>
@@ -723,6 +753,7 @@
                 <tr>
                     <th>27#</th>
                     <th><img id="logos" src="../assets/logoSttut.png" alt=""></th>
+                    <th><p id="nombre-equipo">Stuttgart</p></th>
                     <th>4</th>
                     <th>1</th>
                     <th>1</th>
@@ -748,6 +779,7 @@
                 <tr>
                     <th>28#</th>
                     <th><img id="logoMonaco" src="../assets/logoShakhtar.png" alt=""></th>
+                    <th><p id="nombre-equipo">Shakhtar</p></th>
                     <th>4</th>
                     <th>1</th>
                     <th>1</th>
@@ -773,6 +805,7 @@
                 <tr>
                     <th>29#</th>
                     <th><img id="logos" src="../assets/logoGirona.png" alt=""></th>
+                    <th><p id="nombre-equipo">Girona</p></th>
                     <th>4</th>
                     <th>1</th>
                     <th>0</th>
@@ -798,6 +831,7 @@
                 <tr>
                     <th>30#</th>
                     <th><img id="logos" src="../assets/logoSalzburg.png" alt=""></th>
+                    <th><p id="nombre-equipo">Salzburg</p></th>
                     <th>4</th>
                     <th>1</th>
                     <th>0</th>
@@ -823,6 +857,7 @@
                 <tr>
                     <th>31#</th>
                     <th><img id="logoMonaco" src="../assets/logoBologna.png" alt=""></th>
+                    <th><p id="nombre-equipo">Bologna</p></th>
                     <th>4</th>
                     <th>0</th>
                     <th>1</th>
@@ -848,6 +883,7 @@
                 <tr>
                     <th>32#</th>
                     <th><img id="logoBologna" src="../assets/logoLeipzig.png" alt=""></th>
+                    <th><p id="nombre-equipo">Leipzig</p></th>
                     <th>4</th>
                     <th>0</th>
                     <th>0</th>
@@ -873,6 +909,7 @@
                 <tr>
                     <th>33#</th>
                     <th><img id="logoBO4" src="../assets/logoSturm.png" alt=""></th>
+                    <th><p id="nombre-equipo">Sturm Graz</p></th>
                     <th>4</th>
                     <th>0</th>
                     <th>0</th>
@@ -898,6 +935,7 @@
                 <tr>
                     <th>34#</th>
                     <th><img id="logos" src="../assets/logoYoung.png" alt=""></th>
+                    <th><p id="nombre-equipo">Young Boys</p></th>
                     <th>4</th>
                     <th>0</th>
                     <th>0</th>
@@ -923,6 +961,7 @@
                 <tr>
                     <th>35#</th>
                     <th><img id="logoMonaco" src="../assets/LogoCrVena.png" alt=""></th>
+                    <th><p id="nombre-equipo">Estrella Roja</p></th>
                     <th>4</th>
                     <th>0</th>
                     <th>0</th>
@@ -948,6 +987,7 @@
                 <tr>
                     <th>36#</th>
                     <th><img id="logos" src="../assets/logoBratislava.png" alt=""><h4></h4></th>
+                    <th><p id="nombre-equipo">S. Bratislava</p></th>
                     <th>4</th>
                     <th>0</th>
                     <th>0</th>
