@@ -14,7 +14,8 @@
     color: white;
 }
 .contenedor{
-    margin-left: 140px;
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: center;
     width: 500px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
@@ -57,7 +58,7 @@ header{
     width: 685px;
     height: 400px;
     display: flex;
-    margin-left: 120px;
+    margin-left: 50px;
     margin-bottom: 40px;
     margin-top: 40px;
 }
@@ -164,6 +165,8 @@ h4{
 .card{
     margin-top: 50px;
     display: flex;
+    height: 500px;
+
     h5, p{
         color: white;
     }
@@ -189,4 +192,7 @@ h4{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+img{
+    height: 150px;
 }
