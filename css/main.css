@@ -237,12 +237,61 @@ img {
   height: 500px;
   width: 100%; }
 
+* {
+  padding: 0;
+  margin: 0; }
+
 #body-highlights {
   background-image: url(../assets/fondo.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; }
+
+.cont1 {
+  height: auto;
+  background-color: #21409A; }
+
+.cont2 {
+  height: auto;
+  background-color: #362667; }
+
+#h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+p {
+  color: white; }
+
+.acordeones {
+  background-color: black; }
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%; }
+
+.content {
+  margin-left: 200px;
+  padding: 20px;
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box; }
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: none; }
+
+section h2 {
+  margin-top: 0; }
+
+#scroller {
+  height: 300px;
+  width: 100%;
+  transform: translateX(-200px); }
 
 #logos {
   width: 50px;
