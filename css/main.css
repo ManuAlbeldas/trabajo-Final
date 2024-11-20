@@ -211,6 +211,32 @@ h4 {
 img {
   height: 150px; }
 
+.carousel2 {
+  height: 100px; }
+
+.asd {
+  padding: 0;
+  margin: 0; }
+
+#encabezado {
+  height: 365px;
+  width: 400px;
+  margin-top: 50px;
+  border-radius: 5px; }
+
+.tarjetas {
+  display: flex;
+  margin-right: 40px;
+  margin-bottom: 30px; }
+
+.principal {
+  display: flex; }
+
+#representacion {
+  transform: translate(0%, 0%);
+  height: 500px;
+  width: 100%; }
+
 #body-highlights {
   background-image: url(../assets/fondo.png);
   background-size: cover;
