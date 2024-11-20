@@ -1,0 +1,55 @@
+#grid-container{
+    display: grid;
+    background-color: brown;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        'noticia1 noticia2'
+        'noticia3 noticia4'
+        'noticia5 noticia6'
+        'noticia7 noticia8';
+
+    height: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.noticia1{
+    background-color: aqua;
+    grid-area: noticia1;
+}
+
+.noticia2{
+    background-color: blue;
+    grid-area: noticia2;
+}
+
+.noticia3{
+    background-color: burlywood;
+    grid-area: noticia3;
+}
+
+.noticia4{
+    background-color: chartreuse;
+    grid-area: noticia4;
+}
+
+.noticia5{
+    background-color: chocolate;
+    grid-area: noticia5;
+}
+
+.noticia6{
+    background-color: black;
+    grid-area: noticia6;
+}
+
+.noticia7{
+    background-color: chocolate;
+    grid-area: noticia7;
+}
+
+.noticia8{
+    background-color: chocolate;
+    grid-area: noticia8;
+}
