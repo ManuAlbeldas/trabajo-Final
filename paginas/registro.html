@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="body">
     <header class="header">
         <nav class="menu">
             <ul>
@@ -21,10 +21,10 @@
             </ul>
         </nav>
     </header>
-    <div class="container_registro">
+    <div class="container-registro">
         <h2>Formulario de Registro</h2>
         <section id="registro_datos">
-            <form>
+            <form id="datos-usuario">
                 <label for="username">Nombre de usuario:</label>
                 <input type="text" id="username" name="username" required><br><br>
     
@@ -36,25 +36,33 @@
             </form>
         </section>
         <br>
-        <label for="comentario">Opina/Comparte</label>
-        <br>
-        <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-        <br>
-        <input type="checkbox" name="aceptar" id="" required>
-        <p id="mensaje"></p>
-       
+        <div id="comentar">
+            <div>
+                <label for="comentario"><h4>Opina/Comparte</h4></label><br>
+                <textarea name="comentario" id="" cols="80" rows="7"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="aceptar" id="" required>
+                <p id="comentario"></p>
+            </div>  
+        </div>
         <div id="registro_puntua">
             <h4>Puntúa la página</h4>
             <div class="rating">
-                <span class="star" data-value="5">&#9733;</span>
-                <span class="star" data-value="4">&#9733;</span>
-                <span class="star" data-value="3">&#9733;</span>
-                <span class="star" data-value="2">&#9733;</span>
                 <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
             </div>
-            <script src="app.js"></script>
         </div>
-        <button type="button" onclick="registrarse()">Registrarse</button>
+        <div id="boton-registro">
+            <button type="button" onclick="registrarse()">Registrarse</button>
+        </div>
+        <div id="estado-del-registro">
+            <p id="mensajeerror"></p>
+            <p id="mensajeexito"></p>
+        </div>
         <script>
             function registrarse() {
                 const username = document.getElementById('username').value;
@@ -62,9 +70,9 @@
                 const password = document.getElementById('password').value;
     
                 if (username && email && password) {
-                    document.getElementById('mensaje').innerText = 'Registro exitoso!';
+                    document.getElementById('mensajeexito').innerText = 'Registro exitoso!';
                 } else {
-                    document.getElementById('mensaje').innerText = 'Por favor, completa todos los campos.';
+                    document.getElementById('mensajeerror').innerText = 'Por favor, completa todos los campos.';
                 }
             }
         </script>

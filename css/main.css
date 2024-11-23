@@ -499,6 +499,72 @@ section h2 {
     #padre_items_venta p {
       font-size: 14px; } }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+.container-registro h2 {
+  color: white;
+  text-shadow: 0 0 8px black; }
+
+#registro_datos {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto; }
+  #registro_datos #datos-usuario label {
+    font-weight: bold;
+    color: #1F3A93; }
+  #registro_datos #datos-usuario input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc; }
+
+#comentar {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #comentar label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; }
+
+#boton-registro {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#estado-del-registro {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #estado-del-registro #mensajeerror {
+    color: red; }
+  #estado-del-registro #mensajeexito {
+    color: white; }
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  color: red; }
+
+.star {
+  font-size: 2rem;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.2s; }
+
+.star:hover,
+.star:hover ~ .star {
+  color: gold; }
+
 #logos {
   width: 50px;
   height: 50px; }
