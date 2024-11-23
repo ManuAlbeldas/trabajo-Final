@@ -1,55 +1,142 @@
-#grid-container{
+@mixin medidas($ancho, $alto){
+    height: $alto;
+    width: $ancho;
+}
+
+#bannertexto{
+    color: white;
+    text-shadow: 2px 1px 5px black;
+}
+
+.grid-container{
     display: grid;
-    background-color: brown;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
         'noticia1 noticia2'
         'noticia3 noticia4'
         'noticia5 noticia6'
         'noticia7 noticia8';
 
-    height: 100%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    height: 1000px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 50px;
 }
 
 .noticia1{
-    background-color: aqua;
+    background-color: white;
     grid-area: noticia1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    h4{
+        text-align: start;
+        font-size: larger;
+        padding: 20px;
+        color: black
+    }
 }
 
 .noticia2{
-    background-color: blue;
+    @extend .noticia1;
     grid-area: noticia2;
 }
 
 .noticia3{
-    background-color: burlywood;
+    @extend .noticia1;
     grid-area: noticia3;
 }
 
 .noticia4{
-    background-color: chartreuse;
+    @extend .noticia1;
     grid-area: noticia4;
 }
 
 .noticia5{
-    background-color: chocolate;
+    @extend .noticia1;
     grid-area: noticia5;
 }
 
 .noticia6{
-    background-color: black;
+    @extend .noticia1;
     grid-area: noticia6;
 }
 
 .noticia7{
-    background-color: chocolate;
+    @extend .noticia1;
     grid-area: noticia7;
 }
 
 .noticia8{
-    background-color: chocolate;
+    @extend .noticia1;
     grid-area: noticia8;
+}
+
+#trofeo{
+    @include medidas(360px, 100%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px
+}
+
+#realmadrid{
+    @extend #trofeo;
+}
+
+#allianzarena{
+    @extend #trofeo;
+}
+
+#todosloscampeones{
+    @extend #trofeo;
+}
+
+#goleadoresmaximos{
+    @extend #trofeo;
+}
+
+#goleadoresxequipo{
+    @extend #trofeo;
+}
+
+#creacion{
+    @extend #trofeo;
+}
+
+#finalchampions{
+    @extend #trofeo;
+}
+
+@media screen and (max-width: 767px){
+    
+    body{
+        width: 100%;
+    }
+
+    #bannertexto{
+        text-align: center;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 
+            'noticia1'
+            'noticia2'
+            'noticia3'
+            'noticia4'
+            'noticia5'
+            'noticia6'
+            'noticia7'
+            'noticia8';
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+        padding: 0;
+    }
+    
+    .noticia1{
+        background-color: black;
+    }
 }

@@ -244,6 +244,80 @@ img {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
+#bannertexto {
+  color: white;
+  text-shadow: 2px 1px 5px black; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'noticia1 noticia2' 'noticia3 noticia4' 'noticia5 noticia6' 'noticia7 noticia8';
+  height: 1000px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  padding: 50px; }
+
+.noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+  background-color: white;
+  grid-area: noticia1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; }
+  .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+    text-align: start;
+    font-size: larger;
+    padding: 20px;
+    color: black; }
+
+.noticia2 {
+  grid-area: noticia2; }
+
+.noticia3 {
+  grid-area: noticia3; }
+
+.noticia4 {
+  grid-area: noticia4; }
+
+.noticia5 {
+  grid-area: noticia5; }
+
+.noticia6 {
+  grid-area: noticia6; }
+
+.noticia7 {
+  grid-area: noticia7; }
+
+.noticia8 {
+  grid-area: noticia8; }
+
+#trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+  height: 100%;
+  width: 360px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px; }
+
+@media screen and (max-width: 767px) {
+  body {
+    width: 100%; }
+  #bannertexto {
+    text-align: center; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    padding: 0; }
+  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+    background-color: black; } }
+
+@media screen and (max-width: 320px) {
+  #padre_items {
+    display: none; } }
+
 #logos {
   width: 50px;
   height: 50px; }
