@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padre-tienda{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    #hijo-reloj{
+        color: blue;
+        text-align: center;
+    }
+
+    #hijo-souvenir{
+        @extend #hijo-reloj;
+    }
+
+    #hijo-ropa{
+        @extend #hijo-reloj;
+    }
+
+    #hijo-pelota{
+        @extend #hijo-reloj;
+    }
+}
+
+#padre_items_venta{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p{
+        color: black;
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

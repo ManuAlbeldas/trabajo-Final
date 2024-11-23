@@ -312,7 +312,7 @@ section h2 {
     text-shadow: 2px 1px 5px black;
     text-align: center; }
 
-.grid-container {
+.grid-sobrechampions {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -373,7 +373,7 @@ section h2 {
       color: white;
       text-shadow: 2px 1px 5px black;
       text-align: center; }
-  .grid-container {
+  .grid-sobrechampions {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -404,7 +404,7 @@ section h2 {
       color: white;
       text-shadow: 2px 1px 5px black;
       text-align: center; }
-  .grid-container {
+  .grid-sobrechampions {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -434,7 +434,7 @@ section h2 {
       color: white;
       text-shadow: 2px 1px 5px black;
       text-align: center; }
-  .grid-container {
+  .grid-sobrechampions {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -449,6 +449,30 @@ section h2 {
       font-size: 10px;
       color: #424242;
       padding: 10px; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.padre-tienda {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .padre-tienda #hijo-reloj, .padre-tienda #hijo-souvenir, .padre-tienda #hijo-ropa, .padre-tienda #hijo-pelota {
+    color: blue;
+    text-align: center; }
+
+#padre_items_venta {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  #padre_items_venta p {
+    color: black; }
+  #padre_items_venta div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
 
 #logos {
   width: 50px;
