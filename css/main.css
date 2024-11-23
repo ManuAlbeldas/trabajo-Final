@@ -293,6 +293,163 @@ section h2 {
   width: 100%;
   transform: translateX(-200px); }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+.body {
+  background-image: url(../assets/fondo.png);
+  background-size: cover; }
+
+.banner-padre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 0 10px; }
+  .banner-padre #bannertexto {
+    color: white;
+    text-shadow: 2px 1px 5px black;
+    text-align: center; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'noticia1 noticia2' 'noticia3 noticia4' 'noticia5 noticia6' 'noticia7 noticia8';
+  height: 1000px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  padding: 50px; }
+
+.noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+  background-color: white;
+  grid-area: noticia1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; }
+  .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+    text-align: start;
+    font-size: larger;
+    padding: 20px;
+    color: black; }
+
+.noticia2 {
+  grid-area: noticia2; }
+
+.noticia3 {
+  grid-area: noticia3; }
+
+.noticia4 {
+  grid-area: noticia4; }
+
+.noticia5 {
+  grid-area: noticia5; }
+
+.noticia6 {
+  grid-area: noticia6; }
+
+.noticia7 {
+  grid-area: noticia7; }
+
+.noticia8 {
+  grid-area: noticia8; }
+
+#trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+  height: 100%;
+  width: 360px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px; }
+
+@media screen and (max-width: 1648px) and (min-width: 1025px) {
+  .banner-padre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 10px; }
+    .banner-padre #bannertexto {
+      color: white;
+      text-shadow: 2px 1px 5px black;
+      text-align: center; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'noticia1 noticia2' 'noticia3 noticia4' 'noticia5 noticia6' 'noticia7 noticia8';
+    height: 1000px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 50px; }
+  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+    height: 240px; }
+    .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+      font-size: 14px;
+      color: #424242;
+      padding: 7px; }
+  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+    width: 240px;
+    height: 100%;
+    border-radius: 0; } }
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .banner-padre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 10px; }
+    .banner-padre #bannertexto {
+      color: white;
+      text-shadow: 2px 1px 5px black;
+      text-align: center; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
+    grid-column-gap: 0;
+    grid-row-gap: 40px; }
+  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+    border-radius: 0; }
+  #textotrofeo, .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+    font-size: 18px;
+    color: #424242;
+    padding: 10px; }
+  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+    width: 270px;
+    height: 100%;
+    border-radius: 0; } }
+
+@media screen and (max-width: 767px) {
+  .banner-padre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 10px; }
+    .banner-padre #bannertexto {
+      color: white;
+      text-shadow: 2px 1px 5px black;
+      text-align: center; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
+    width: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 30px;
+    padding: 0; }
+  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+    height: 100px; }
+    .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+      font-size: 10px;
+      color: #424242;
+      padding: 10px; } }
+
 #logos {
   width: 50px;
   height: 50px; }
