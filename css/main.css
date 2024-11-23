@@ -363,10 +363,6 @@ section h2 {
   .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
     background-color: black; } }
 
-@media screen and (max-width: 320px) {
-  #padre_items {
-    display: none; } }
-
 #logos {
   width: 50px;
   height: 50px; }
