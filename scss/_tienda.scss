@@ -4,11 +4,12 @@
 }
 
 .padre-tienda{
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
     #hijo-reloj{
-        color: blue;
+        color: black;
         text-align: center;
     }
 
@@ -25,10 +26,17 @@
     }
 }
 
+.padre_venta{
+    h3{
+        color: white;
+    }
+}
+
 #padre_items_venta{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: white;
     p{
         color: black;
     }
@@ -37,5 +45,38 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 1648px) and (min-width: 992px){
+    
+    #padre_items_venta{
+        width: 100%;
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+    
+    #padre_items_venta{
+        width: 100%;
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .padre-tienda{
+        display: none;
+    }
+    #padre_items_venta{
+        width: 750px;
+        p{
+            font-size: 14px;
+        }
     }
 }
