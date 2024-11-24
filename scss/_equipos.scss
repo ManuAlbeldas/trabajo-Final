@@ -5,6 +5,8 @@
 }
 
 #equipos-linea1{
+    margin: 0;
+    padding: 20px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -60,4 +62,21 @@
 
 #equipos-sgraz{
     @extend #equipos-amadrid;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px){
+    #equipos-linea1{
+        width: 100%;
+        div{
+            @include medidas(90px, 140px);
+        }
+        p{
+            text-align: center;
+            color: black;
+        }
+        img{
+            @include medidas(100%, 70%);
+        }
+    }
+
 }
