@@ -1,0 +1,28 @@
+#Informe{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+@mixin medidas($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+}
+#aviso14{
+    margin-right: 10px;
+    border-radius: 10px;
+    @include medidas(400px, 700px)
+}
+#cartaNoticia{
+    margin-top: 0;
+    margin-right: 10px;
+}
+.cuerpo{
+    background-image: url(../assets/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#noti{
+    color: white;
+}
