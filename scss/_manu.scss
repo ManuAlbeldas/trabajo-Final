@@ -255,17 +255,19 @@ h4{
 }
 #goleador6{
     transform: translate( -20%, -120%);
-    @include medidas(150px, 200px)
+    @extend #goleador3;
 }
 #goleador7{
     transform: translate( 600%, -160%);
-    @include medidas(200px, 150px)
+    @extend #goleador1;
 }
 #goleador8{
     transform: translate( 670%, -135%);
     @include medidas(200px, 150px)
 }
 .divGoleadores{
+    display: flex;
+    align-items: center;
     @include medidas(540px, 100%);
     overflow: hidden;
 }
@@ -475,7 +477,7 @@ h4{
     }
 }
 
-@media screen and (max-width: 767px) and (min-width: 320px){
+@media screen and (max-width: 768px) and (min-width: 320px){
     #representacion{
         @include medidas(230px, 100%)
     }
@@ -523,5 +525,16 @@ h4{
                 }
             }
         }
+    }
+
+    #divGoleadores-hijo-1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #divGoleadores-hijo-2{
+        display: none;
     }
 }
