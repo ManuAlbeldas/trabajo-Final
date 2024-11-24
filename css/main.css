@@ -1054,7 +1054,8 @@ input[type="checkbox"] {
 
 #nombre-equipo {
   transform: translateY(20px);
-  font-size: 13   px; }
+  font-size: 13   px;
+  color: black; }
 
 #tabla {
   width: 70%;
