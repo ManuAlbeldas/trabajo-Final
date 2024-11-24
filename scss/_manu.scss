@@ -217,6 +217,7 @@ img{
     @include medidas(500px, 100%)
 }
 #store{
+    border-radius: 10px;
     transform: translate(400%, 200%);
     @include medidas(40px, 100px)
 }

@@ -239,6 +239,7 @@ img {
   width: 100%; }
 
 #store {
+  border-radius: 10px;
   transform: translate(400%, 200%);
   height: 40px;
   width: 100px; }
