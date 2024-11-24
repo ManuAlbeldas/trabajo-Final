@@ -202,6 +202,11 @@ h4{
     padding: 0;
     margin: 0;
 }
+
+.banner-padre{
+    margin-left: 40px;
+}
+
 #encabezado{
     margin-top: 50px;
     border-radius: 5px;
@@ -210,14 +215,17 @@ h4{
 }
 .tarjetas{
     display: flex;
+    justify-content: space-between;
+    width: 50%;
     margin-right: 40px;
     margin-bottom: 30px;
 }
 .principal{
     display: flex;
+    justify-content: space-between;
 }
 #representacion{
-    @include medidas(500px, 100%)
+    @include medidas(600px, 100%)
 }
 #store{
     border-radius: 10px;
@@ -258,7 +266,8 @@ h4{
     @include medidas(200px, 150px)
 }
 .divGoleadores{
-    @include medidas(540px, 100%)
+    @include medidas(540px, 100%);
+    overflow: hidden;
 }
 
 
@@ -404,5 +413,115 @@ h4{
     
     .card-title{
         font-size: 5px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1400px) and (min-width: 1024px){
+    #encabezado{
+        @include medidas(305px, 340px)
+    }
+
+    .card{
+        width: 180px;
+        .card-body{
+            .card-title{
+                font-size: 15px;
+            }
+            .card-text{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 769px){
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .banner-padre{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .tarjetas{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 5px;
+        margin-bottom: 30px;
+        .card{
+            width: 240px;
+            .card-body{
+                .card-title{
+                    font-size: 15px;
+                }
+                .card-text{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+    #representacion{
+        @include medidas(230px, 100%)
+    }
+    
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .banner-padre{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    #encabezado{
+        margin-top: 20px;
+        @include medidas(325px, 300px)
+    
+    }
+
+    .tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 5px;
+        margin-bottom: 30px;
+        .card{
+            width: 300px;
+            margin: 20px;
+            .card-img-top{
+                height: 180px;
+            }
+            .card-body{
+                .card-title{
+                    font-size: 15px;
+                }
+                .card-text{
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }
