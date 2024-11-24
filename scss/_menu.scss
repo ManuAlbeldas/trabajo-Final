@@ -1,25 +1,20 @@
 ul{
     list-style: none;
-
+    padding-left: 0rem;
     ul{
         position: absolute;
         display: none;
-
+        background-color: #000246;
         li{
             display: block;
         }
     }
-
     li{
         &:hover{
             background-color: #000246;
-
             ul{
-                display: block;
-                background-color: aquamarine;
-            
+                display: block;    
             }
-
         }
         a{
             color: white;
@@ -29,12 +24,176 @@ ul{
 }
 
 li{
+    color: white;
     display: inline-block;
     width: 13%;
     position: relative;
     font-size: 14px;
 }
-.menu{
+.padre-menu{
     background-color: #000246;
     text-align: center;
+}
+
+.menu-desplegable-padre{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px){
+    .header{
+        width: 100%;
+    }
+    .menu-desplegable-padre{
+        display: inline-block;
+        
+        #menu-equipos-hijo{
+            display: none;
+        }
+        
+        #menu-highlights-hijo{
+            display: none;
+        }
+        
+        #menu-historia-hijo{
+            display: none;
+        }
+        
+        #menu-clasificacion-hijo{
+            display: none;
+        }
+        
+        #menu-sobre-hijo{
+            display: none;
+        }
+        
+        #menu-registro-hijo{
+            display: none;
+        }
+    }
+    #menu-tienda{
+        display: none;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 769px){
+    .menu-desplegable-padre{
+        display: inline-block;
+
+        #menu-equipos-hijo{
+            display: none;
+        }
+        
+        #menu-highlights-hijo{
+            display: none;
+        }
+        
+        #menu-historia-hijo{
+            display: none;
+        }
+        
+        #menu-clasificacion-hijo{
+            display: none;
+        }
+        
+        #menu-sobre-hijo{
+            display: none;
+        }
+    }
+    #menu-registro{
+        display: none;
+    }
+    #menu-tienda{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px){
+    .menu-desplegable-padre{
+        display: inline-block;
+        
+        #menu-equipos-hijo{
+            display: none;
+        }
+        
+        #menu-highlights-hijo{
+            display: none;
+        }
+        
+        #menu-historia-hijo{
+            display: none;
+        }
+        
+        #menu-clasificacion-hijo{
+            display: none;
+        }
+    }
+    #menu-sobre{
+        display: none;
+    }
+    #menu-registro{
+        display: none;
+    }
+    #menu-tienda{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 480px){
+    .menu-desplegable-padre{
+        display: inline-block;
+        
+        #menu-equipos-hijo{
+            display: none;
+        }
+        
+        #menu-highlights-hijo{
+            display: none;
+        }
+        
+        #menu-historia-hijo{
+            display: none;
+        }
+    }
+    #menu-clasificacion{
+        display: none;
+    }
+    #menu-sobre{
+        display: none;
+    }
+    #menu-registro{
+        display: none;
+    }
+    #menu-tienda{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px) and (min-width: 320px){
+    .menu-desplegable-padre{
+        display: inline-block;
+    }
+    #menu-equipos{
+        display: none;
+    }
+    #menu-highlights{
+        display: none;
+    }
+    #menu-historia{
+        display: none;
+    }
+    #menu-clasificacion{
+        display: none;
+    }
+    #menu-sobre{
+        display: none;
+    }
+    #menu-registro{
+        display: none;
+    }
+    #menu-tienda{
+        display: none;
+    }
 }
