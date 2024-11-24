@@ -1,0 +1,63 @@
+
+@mixin medidas($ancho, $alto){
+    height: $alto;
+    width: $ancho;
+}
+
+#equipos-linea1{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    div{
+        @include medidas(90px, 140px);
+    }
+    p{
+        text-align: center;
+        color: black;
+    }
+    img{
+        @include medidas(100%, 70%);
+    }
+}
+
+#equipos-linea2{
+    @extend #equipos-linea1;
+}
+
+#equipos-linea3{
+    @extend #equipos-linea1;
+}
+
+#equipos-linea4{
+    @extend #equipos-linea1;
+}
+
+#equipos-amadrid{
+    img{
+        @include medidas(100%, 50%);
+        margin-top: 30%;
+    }
+    
+}
+
+#equipos-celtic{
+    @extend #equipos-amadrid;
+}
+
+#equipos-eroja{
+    @include medidas(80px, 98px);
+}
+
+#equipos-leipzig{
+    @extend #equipos-amadrid;
+}
+
+#equipos-psv{
+    @extend #equipos-amadrid;
+}
+
+#equipos-sgraz{
+    @extend #equipos-amadrid;
+}

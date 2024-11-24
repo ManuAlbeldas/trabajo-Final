@@ -293,6 +293,31 @@ section h2 {
   width: 100%;
   transform: translateX(-200px); }
 
+#equipos-linea1, #equipos-linea2, #equipos-linea3, #equipos-linea4 {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center; }
+  #equipos-linea1 div, #equipos-linea2 div, #equipos-linea3 div, #equipos-linea4 div {
+    height: 140px;
+    width: 90px; }
+  #equipos-linea1 p, #equipos-linea2 p, #equipos-linea3 p, #equipos-linea4 p {
+    text-align: center;
+    color: black; }
+  #equipos-linea1 img, #equipos-linea2 img, #equipos-linea3 img, #equipos-linea4 img {
+    height: 70%;
+    width: 100%; }
+
+#equipos-amadrid img, #equipos-celtic img, #equipos-leipzig img, #equipos-psv img, #equipos-sgraz img {
+  height: 50%;
+  width: 100%;
+  margin-top: 30%; }
+
+#equipos-eroja {
+  height: 98px;
+  width: 80px; }
+
 * {
   margin: 0;
   padding: 0; }
