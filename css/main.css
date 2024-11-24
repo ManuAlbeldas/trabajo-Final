@@ -333,7 +333,6 @@ img {
   display: flex; }
 
 #representacion {
-  transform: translate(0%, 0%);
   height: 500px;
   width: 100%; }
 
@@ -342,6 +341,51 @@ img {
   transform: translate(400%, 200%);
   height: 40px;
   width: 100px; }
+
+#goleadores {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  height: 500px;
+  width: 400px; }
+
+#goleador1 {
+  transform: translate(20%, -78%);
+  height: 200px;
+  width: 150px; }
+
+#goleador2 {
+  transform: translate(-50%, 50%);
+  height: 150px;
+  width: 150px; }
+
+#goleador3 {
+  transform: translate(-30%, -70%);
+  height: 150px;
+  width: 200px; }
+
+#goleador4 {
+  transform: translate(-200%, 70%);
+  height: 150px;
+  width: 120px; }
+
+#goleador6 {
+  transform: translate(-20%, -120%);
+  height: 150px;
+  width: 200px; }
+
+#goleador7 {
+  transform: translate(600%, -160%);
+  height: 200px;
+  width: 150px; }
+
+#goleador8 {
+  transform: translate(670%, -135%);
+  height: 200px;
+  width: 150px; }
+
+.divGoleadores {
+  height: 540px;
+  width: 100%; }
 
 * {
   padding: 0;
