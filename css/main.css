@@ -735,6 +735,84 @@ section h2 {
     max-width: 300px;
     width: 100%; } }
 
+.footer {
+  background-color: #000246;
+  background-image: url(../assets/footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 850px; }
+
+.footer-hijo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 80%;
+  width: 100%; }
+
+.redes-padre {
+  width: 20%;
+  position: relative;
+  top: 50%; }
+
+#Siguenos {
+  transform: translate(0);
+  color: aliceblue; }
+
+.redes {
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  transform: translate(0); }
+
+.terminos-y-condiciones-padre {
+  width: 40%;
+  position: relative;
+  top: 50%; }
+
+#terminos-hijo {
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  transform: translate(0); }
+
+.tiendavirtual-padre {
+  width: 20%;
+  position: relative;
+  top: 50%; }
+
+#store {
+  border-radius: 10px;
+  transform: translate(0);
+  height: 35px;
+  width: 80px; }
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .footer {
+    width: 100%; }
+  .footer-hijo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    height: 80%;
+    width: 100%;
+    position: relative;
+    bottom: 0; }
+  .redes-padre {
+    width: 100%;
+    position: relative;
+    top: 50%; }
+  .terminos-y-condiciones-padre {
+    width: 100%;
+    position: relative;
+    top: 50%; }
+  .tiendavirtual-padre {
+    width: 100%;
+    position: relative;
+    top: 50%; } }
+
 #logos {
   width: 50px;
   height: 50px; }
