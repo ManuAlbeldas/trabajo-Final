@@ -1,7 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
 .container-registro{
     h2{
@@ -10,6 +6,11 @@
     }
     h4{
         @extend .container-registro;
+    }
+    #registro-puntua{
+        h4{
+            color: white;
+        }
     }
 }
 
@@ -53,6 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #1F3A93;
 }
 
 #estado-del-registro{

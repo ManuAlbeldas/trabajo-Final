@@ -23,7 +23,7 @@
     </header>
     <div class="container-registro">
         <h2>Formulario de Registro</h2>
-        <section id="registro_datos">
+        <section id="registro_datos" class="col-lg-12 col-sm-10">
             <form id="datos-usuario">
                 <label for="username">Nombre de usuario:</label>
                 <input type="text" id="username" name="username" required><br><br>
@@ -39,15 +39,15 @@
         <div id="comentar">
             <div>
                 <label for="comentario"><h4>Opina/Comparte</h4></label><br>
-                <textarea name="comentario" id="" cols="80" rows="7"></textarea>
+                <textarea name="comentario" id="" cols="40" rows="7"></textarea>
             </div>
             <div>
                 <input type="checkbox" name="aceptar" id="" required>
                 <p id="comentario"></p>
             </div>  
         </div>
-        <div id="registro_puntua">
-            <h4>Puntúa la página</h4>
+        <div id="registro-puntua">
+            <h4 id="puntuar">Puntúa la página</h4>
             <div class="rating">
                 <span class="star" data-value="1">&#9733;</span>
                 <span class="star" data-value="2">&#9733;</span>
@@ -57,7 +57,7 @@
             </div>
         </div>
         <div id="boton-registro">
-            <button type="button" onclick="registrarse()">Registrarse</button>
+            <button type="btn btn-dark rounded-pill px-3" onclick="registrarse()">Registrarse</button>
         </div>
         <div id="estado-del-registro">
             <p id="mensajeerror"></p>

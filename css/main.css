@@ -475,10 +475,6 @@ section h2 {
       color: #424242;
       padding: 10px; } }
 
-* {
-  margin: 0;
-  padding: 0; }
-
 .padre-tienda {
   background-color: white;
   display: flex;
@@ -524,13 +520,12 @@ section h2 {
     #padre_items_venta p {
       font-size: 14px; } }
 
-* {
-  margin: 0;
-  padding: 0; }
-
 .container-registro h2 {
   color: white;
   text-shadow: 0 0 8px black; }
+
+.container-registro #registro-puntua h4 {
+  color: white; }
 
 #registro_datos {
   background-color: white;
@@ -563,7 +558,8 @@ section h2 {
 #boton-registro {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  color: #1F3A93; }
 
 #estado-del-registro {
   display: flex;
