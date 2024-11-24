@@ -213,11 +213,46 @@ img{
     display: flex;
 }
 #representacion{
-    transform: translate( 0%, 0%);
     @include medidas(500px, 100%)
 }
 #store{
     border-radius: 10px;
     transform: translate(400%, 200%);
     @include medidas(40px, 100px)
+}
+#goleadores{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    @include medidas(500px, 400px)
+}
+#goleador1{
+    transform: translate( 20%, -78%);
+    @include medidas(200px, 150px)
+}
+#goleador2{
+    transform: translate( -50%, 50%);
+    @include medidas(150px, 150px)
+}
+#goleador3{
+    transform: translate( -30%, -70%);
+    @include medidas(150px, 200px)
+}
+#goleador4{
+    transform: translate( -200%, 70%);
+    @include medidas(150px, 120px)
+}
+#goleador6{
+    transform: translate( -20%, -120%);
+    @include medidas(150px, 200px)
+}
+#goleador7{
+    transform: translate( 600%, -160%);
+    @include medidas(200px, 150px)
+}
+#goleador8{
+    transform: translate( 670%, -135%);
+    @include medidas(200px, 150px)
+}
+.divGoleadores{
+    @include medidas(540px, 100%)
 }
