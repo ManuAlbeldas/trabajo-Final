@@ -1,4 +1,5 @@
 
+
 .padre-tienda{
     background-color: white;
     display: flex;
@@ -22,7 +23,7 @@
     }
 }
 
-.padre_venta{
+.padre-venta{
     h3{
         color: white;
     }
@@ -44,9 +45,9 @@
     }
 }
 
-@media screen and (max-width: 1648px) and (min-width: 992px){
+@media screen and (max-width: 1648px) and (min-width: 768px){
     
-    #padre_items_venta{
+    .padre-venta{
         width: 100%;
         p{
             font-size: 14px;
@@ -54,15 +55,7 @@
     }
 }
 
-@media screen and (max-width: 991px) and (min-width: 768px){
-    
-    #padre_items_venta{
-        width: 100%;
-        p{
-            font-size: 14px;
-        }
-    }
-}
+
 
 @media screen and (max-width: 767px){
 

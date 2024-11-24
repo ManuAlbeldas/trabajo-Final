@@ -347,23 +347,20 @@ section h2 {
   background-image: url(../assets/fondo.png);
   background-size: cover; }
 
-.banner-padre {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#bannertexto {
+  margin: 0;
   padding: 20px;
-  box-shadow: 0 0 10px; }
-  .banner-padre #bannertexto {
-    color: white;
-    text-shadow: 2px 1px 5px black;
-    text-align: center; }
+  width: 100%;
+  color: white;
+  text-shadow: 2px 1px 5px black;
+  text-align: center; }
 
 .grid-sobrechampions {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: 'noticia1 noticia2' 'noticia3 noticia4' 'noticia5 noticia6' 'noticia7 noticia8';
-  height: 1000px;
+  height: 100%;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
   padding: 50px; }
@@ -379,7 +376,9 @@ section h2 {
     text-align: start;
     font-size: larger;
     padding: 20px;
-    color: black; }
+    color: black;
+    margin-left: 0;
+    margin-bottom: 0; }
 
 .noticia2 {
   grid-area: noticia2; }
@@ -409,92 +408,74 @@ section h2 {
   border-top-left-radius: 10px; }
 
 @media screen and (max-width: 1648px) and (min-width: 1025px) {
-  .banner-padre {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0 0 10px; }
-    .banner-padre #bannertexto {
-      color: white;
-      text-shadow: 2px 1px 5px black;
-      text-align: center; }
   .grid-sobrechampions {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 'noticia1 noticia2' 'noticia3 noticia4' 'noticia5 noticia6' 'noticia7 noticia8';
-    height: 1000px;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    padding: 50px; }
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 20px; }
   .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
-    height: 240px; }
+    height: 140px; }
     .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
-      font-size: 14px;
-      color: #424242;
+      font-size: 12px;
       padding: 7px; }
   #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
     width: 240px;
-    height: 100%;
-    border-radius: 0; } }
+    height: 100%; } }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-  .banner-padre {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0 0 10px; }
-    .banner-padre #bannertexto {
-      color: white;
-      text-shadow: 2px 1px 5px black;
-      text-align: center; }
   .grid-sobrechampions {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
     grid-column-gap: 0;
-    grid-row-gap: 40px; }
-  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
-    border-radius: 0; }
+    grid-row-gap: 20px; }
   #textotrofeo, .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
     font-size: 18px;
     color: #424242;
     padding: 10px; }
   #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
     width: 270px;
-    height: 100%;
-    border-radius: 0; } }
+    height: 100%; } }
 
-@media screen and (max-width: 767px) {
-  .banner-padre {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0 0 10px; }
-    .banner-padre #bannertexto {
-      color: white;
-      text-shadow: 2px 1px 5px black;
-      text-align: center; }
+@media screen and (max-width: 767px) and (min-width: 500px) {
   .grid-sobrechampions {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
-    width: 100%;
-    grid-column-gap: 0;
-    grid-row-gap: 30px;
-    padding: 0; }
+    grid-row-gap: 20px; }
   .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
     height: 100px; }
     .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
-      font-size: 10px;
-      color: #424242;
-      padding: 10px; } }
+      font-size: 10px; }
+  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+    width: 270px;
+    height: 100%; }
+  #goleadoresmaximos {
+    width: 180px;
+    height: 100%; } }
+
+@media screen and (max-width: 499px) {
+  .grid-sobrechampions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
+    height: 100%;
+    grid-row-gap: 20px;
+    padding: 20px; }
+  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+    height: 80px; }
+    .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+      font-size: 7px;
+      padding: 5px; }
+  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+    width: 120px;
+    height: 100%; } }
 
 .padre-tienda {
   background-color: white;
@@ -505,7 +486,7 @@ section h2 {
     color: black;
     text-align: center; }
 
-.padre_venta h3 {
+.padre-venta h3 {
   color: white; }
 
 #padre_items_venta {
@@ -521,16 +502,10 @@ section h2 {
     justify-content: center;
     align-items: center; }
 
-@media screen and (max-width: 1648px) and (min-width: 992px) {
-  #padre_items_venta {
+@media screen and (max-width: 1648px) and (min-width: 768px) {
+  .padre-venta {
     width: 100%; }
-    #padre_items_venta p {
-      font-size: 14px; } }
-
-@media screen and (max-width: 991px) and (min-width: 768px) {
-  #padre_items_venta {
-    width: 100%; }
-    #padre_items_venta p {
+    .padre-venta p {
       font-size: 14px; } }
 
 @media screen and (max-width: 767px) {
@@ -550,11 +525,11 @@ section h2 {
 
 #registro_datos {
   background-color: white;
+  max-width: 500px;
+  margin: auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto; }
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); }
   #registro_datos #datos-usuario label {
     font-weight: bold;
     color: #1F3A93; }
@@ -606,6 +581,15 @@ section h2 {
 .star:hover,
 .star:hover ~ .star {
   color: gold; }
+
+@media screen and (max-width: 500px) {
+  #registro_datos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    max-width: 300px;
+    width: 100%; } }
 
 #logos {
   width: 50px;
