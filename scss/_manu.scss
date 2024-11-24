@@ -194,9 +194,7 @@ h4{
     align-items: center;
     justify-content: space-around;
 }
-img{
-    @include medidas(150px, auto)
-}
+
 .carousel2{
     @include medidas(100px, auto)
 }
@@ -299,6 +297,17 @@ img{
         @include medidas(120px, 105px);
     }
 
+    .card{
+        @include medidas(60px, 60px)
+    }
+
+    .card-img-top{
+        height: 120px;
+    }
+    
+    .card-title{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px){
@@ -327,6 +336,21 @@ img{
         @include medidas(120px, 105px);
     }
 
+    #carouselExampleIndicators{
+        @include medidas(320px, auto)
+    }
+
+    .card{
+        @include medidas(60px, 60px)
+    }
+
+    .card-img-top{
+        height: 90px;
+    }
+    
+    .card-title{
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 599px) and (min-width: 320px){
@@ -370,7 +394,7 @@ img{
     }
 
     .card{
-        @include medidas(60px, 60px)
+        @include medidas(60px, 70px)
     }
 
     .card-img-top{
