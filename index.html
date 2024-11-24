@@ -13,22 +13,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Champions league</title>
 </head>
-
-<body>
-  <header class="header">
-    <nav class="menu">
-      <ul>
-        <a href="index.html"><img id="logoHeader" src="assets/logo blanco.png" alt=""></a>
-        <li><a href="./paginas/equipos.html">Equipos</a></li>
-        <li><a href="./paginas/highlights.html">Highlights</a></li>
-        <li><a href="./paginas/historia.html">Historia</a></li>
-        <li><a href="./paginas/pagN1.html">Clasificacion</a></li>
-        <li><a href="./paginas/sobre.html">Sobre</a></li>
-        <li><a href="./paginas/registro.html">Regristro</a></li>
-        <li><a href="./paginas/tienda.html">Tienda</a></li>
-      </ul>
-    </nav>
-  </header>
+<body id="body">
+	<header class="header">
+        <nav class="padre-menu">
+            <ul>
+                <a href="./index.html"><img id="logoHeader" src="./assets/logo blanco.png" alt=""></a>
+                <li id="menu-equipos"><a href="./paginas/equipos.html">Equipos</a></li>
+                <li id="menu-highlights"><a href="./paginas/highlights.html">Highlights</a></li>
+                <li id="menu-historia"><a href="./paginas/historia.html">Historia</a></li>
+                <li id="menu-clasificacion"><a href="./paginas/pagN1.html">Clasificacion</a></li>
+                <li id="menu-sobre"><a href="./paginas/sobre.html">Sobre</a></li>
+                <li id="menu-registro"><a href="./paginas/registro.html">Registro</a></li>
+                <li id="menu-tienda"><a href="./paginas/tienda.html">Tienda</a></li>
+                <li class="menu-desplegable-padre">Más... 
+                    <ul>
+                        <li id="menu-equipos-hijo"><a href="./paginas/equipos.html">Equipos</a></li>
+                        <li id="menu-highlights-hijo"><a href="./paginas/highlights.html">Highlights</a></li>
+                        <li id="menu-historia-hijo"><a href="./paginas/historia.html">Historia</a></li>
+                        <li id="menu-clasificacion-hijo"><a href="./paginas/pagN1.html">Clasificacion</a></li>
+                        <li id="menu-sobre-hijo"><a href="./paginas/sobre.html">Sobre</a></li>
+                        <li id="menu-registro-hijo"><a href="./paginas/registro.html">Registro</a></li>
+                        <li id="menu-tienda-hijo"><a href="./paginas/tienda.html">Tienda</a></li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+    </header>
     <div class="maintotal">
       <img id="mejores" src="assets/mejores jugadores.jpg" alt="">
         <div class="contenedor">
@@ -45,7 +55,7 @@
             <img id="noticia" src="assets/lewandowski.jpeg" alt="">
             <main>
               <article>
-                <p id="tendencia">(estrella roja 2 vs Barcelona 5) Mayor goleada de esta fecha</p>
+                <p id="tendencia">(Estrella roja 2 vs Barcelona 5) Mayor goleada de esta fecha</p>
               </article>
             </main>
           </div>
@@ -67,182 +77,204 @@
           </div>
         </div>
     </div>
-    <div class="row container-fluid imgs">
-      <h3><u><em>Momentos</em></u></h3>
-      <div class="col-lg-2 col-sm-2">
+	<h3 id="momentos-texto"><u><em>Momentos</em></u></h3>
+    <div class="imgs">
+      <div>
           <img id="foto" src="assets/momento 1.jpg" alt="">
       </div>
-      <div class="col-lg-2 col-sm-2">
+      <div>
           <img id="foto" src="assets/momento 2.jpg" alt="">
       </div>
-      <div class="col-lg-2 col-sm-2">
+      <div>
           <img id="foto" src="assets/momento 3.jpg" alt="">
       </div>
-      <div class="col-lg-2 col-sm-2">
+      <div>
         <img id="foto" src="assets/momento4.jpg" alt="">
       </div>
-      <div class="col-lg-2 col-sm-2">
+      <div>
         <img id="foto" src="assets/momento 5.jpg" alt="">
       </div>
-      <div class="col-lg-2 col-sm-2">
+      <div>
         <img id="foto" src="assets/momento 6.jpg" alt="">
       </div>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner carrusel">
-        <div class="carousel-item active">
-          <div class="carta">
-            <div class="card col-lg-2">
-              <img src="./assets/reral madrid vs milan.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Real Madrid 1 vs Milan 3</h5>
-              </div>
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		</div>
+		<div class="carousel-inner carrusel">
+		  <div class="carousel-item active">
+			<div class="carta">
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/reral madrid vs milan.jpg" class="card-img-top" alt="...">
+				<div class="card-body testo">
+				  <h5 class="card-title">Real Madrid 1 vs Milan 3</h5>
+				</div>
+			  </div>
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/bayern munich vs benfica.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Bayern munich 1 vs Benfica 0</h5>
+				</div>
+			  </div><div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/bratislava vs dinamo zagreb.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Bratislava 1 vs Dinamo Zagreb 4</h5>
+				</div>
+			  </div>
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/brujas vs aston villa.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Brujas 1 vs Aston Villa 0</h5>
+				</div>
+			  </div>
+			</div>           
+		  </div>
+		  <div class="carousel-item">
+			<div class="carta">
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/borusia dortmund.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Borusia Dortmund 1 vs Sturm Graz 0</h5>
+				</div>
+			  </div>
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/celtic leipzig.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Celtic 3 vs Leipzig 1</h5>
+				</div>
+			  </div><div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/estrellqa roja vs barcelona.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Estrella roja 2 vs Barcelona 5</h5>
+				</div>
+			  </div>
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/feyenoord vs salzburgo.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Feyenoord 1 vs Salzburgo 3</h5>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<div class="carta">
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/inter vs arsenal.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Inter 1 vs Arsenal 0</h5>
+				</div>
+			  </div>
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/lille vs juventus.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Lille 1 vs Juventus 1</h5>
+				</div>
+			  </div><div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/liverpool vs bayer leverkusen.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Liverpool 4 vs Bayer Leverkusen 0</h5>
+				</div>
+			  </div>
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/monaco vs bologna.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Bologna 0 vs Monaco 1</h5>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<div class="carta">
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/psg vs atletico madrid}.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Psg 1 vs Atletico Madrid 2</h5>
+				</div>
+			  </div>
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/psv girona.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Psv 4 vs Girona 0</h5>
+				</div>
+			  </div><div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/shakhtar vs young boys.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Shakhtar 2 vs Young Boys 1</h5>
+				</div>
+			  </div>
+			  <div class="card col-lg-2 col-md-2 col-sm-2">
+				<img src="./assets/sparta praga vs brest.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Sparta Praga 1 vs Brest 2</h5>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	</div>
+	<footer class="footer">
+        <nav class="padre-menu">
+            <ul>
+                <a href="./index.html"><img id="logoHeader" src="./assets/logo blanco.png" alt=""></a>
+                <li id="menu-equipos"><a href="./paginas/equipos.html">Equipos</a></li>
+                <li id="menu-highlights"><a href="./paginas/highlights.html">Highlights</a></li>
+                <li id="menu-historia"><a href="./paginas/historia.html">Historia</a></li>
+                <li id="menu-clasificacion"><a href="./paginas/pagN1.html">Clasificacion</a></li>
+                <li id="menu-sobre"><a href="./paginas/sobre.html">Sobre</a></li>
+                <li id="menu-registro"><a href="./paginas/registro.html">Registro</a></li>
+                <li id="menu-tienda"><a href="./paginas/tienda.html">Tienda</a></li>
+                <li class="menu-desplegable-padre">Más... 
+                    <ul>
+                        <li id="menu-equipos-hijo"><a href="./paginas/equipos.html">Equipos</a></li>
+                        <li id="menu-highlights-hijo"><a href="./paginas/highlights.html">Highlights</a></li>
+                        <li id="menu-historia-hijo"><a href="./paginas/historia.html">Historia</a></li>
+                        <li id="menu-clasificacion-hijo"><a href="./paginas/pagN1.html">Clasificacion</a></li>
+                        <li id="menu-sobre-hijo"><a href="./paginas/sobre.html">Sobre</a></li>
+                        <li id="menu-registro-hijo"><a href="./paginas/registro.html">Registro</a></li>
+                        <li id="menu-tienda-hijo"><a href="./paginas/tienda.html">Tienda</a></li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+        <div class="footer-hijo">
+            <div class="redes-padre">
+                <div id="redes-hijo1">
+                    <h6 id="Siguenos">Siguenos en:</h6>
+                </div>
+                <div id="redes-hijo2">
+                    <a href="https://x.com/UEFAcom_es"><img class="redes" src="./assets/x.png" alt=""></a>
+                    <a href="https://www.facebook.com/ChampionsLeague/"><img class="redes" src="./assets/facebook.jpg" alt=""></a>
+                    <a href="https://www.instagram.com/championsleague/"><img class="redes" src="./assets/instagram.jpg" alt=""></a>
+                    <a href="https://www.youtube.com/uefatv"><img class="redes" src="./assets/youtube.jpg" alt=""></a>
+                </div>
             </div>
-            <div class="card col-lg-2">
-              <img src="./assets/bayern munich vs benfica.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">bayern munich 1 vs benfica 0</h5>
-              </div>
-            </div><div class="card col-lg-2">
-              <img src="./assets/bratislava vs dinamo zagreb.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">bratislava 1 vs dinamo zagreb 4</h5>
-              </div>
+            <br>
+            <div class="terminos-y-condiciones-padre">
+                <p id="terminos-hijo">© 1998-2024 UEFA. All rights reserved.
+                    La palabra UEFA, el logo de la UEFA y todas las marcas relacionadas con las competiciones de la UEFA están
+                    protegidas por las marcas registradas y/o por el copyright de UEFA. Se prohíbe el uso de estas marcas
+                    registradas para uso comercial. El uso de UEFA.com significa la aceptación de sus Términos, Condiciones y
+                    Política de Privacidad.</p>
             </div>
-            <div class="card col-lg-2">
-              <img src="./assets/brujas vs aston villa.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">brujas 1 vs aston villa 0</h5>
-              </div>
+            <br>
+            <div class="tiendavirtual-padre">
+                <a href="https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?mt=8&path=apps%2fucl"><img id="store" src="./assets/appstore.png" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=com.uefa.ucl&pli=1"><img id="store" src="./assets/googleplay.jpg" alt=""></a>
             </div>
-          </div>           
         </div>
-        <div class="carousel-item">
-          <div class="carta">
-            <div class="card col-lg-2">
-              <img src="./assets/borusia dortmund.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">borusia dortmund 1 vs sturm graz 0</h5>
-              </div>
-            </div>
-            <div class="card col-lg-2">
-              <img src="./assets/celtic leipzig.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">celtic 3 vs leipzig 1</h5>
-              </div>
-            </div><div class="card col-lg-2">
-              <img src="./assets/estrellqa roja vs barcelona.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">estrella roja 2 vs barcelona 5</h5>
-              </div>
-            </div>
-            <div class="card col-lg-2">
-              <img src="./assets/feyenoord vs salzburgo.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">feyenoord 1 vs salzburgo 3</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carta">
-            <div class="card col-lg-2">
-              <img src="./assets/inter vs arsenal.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">inter 1 vs arsenal 0</h5>
-              </div>
-            </div>
-            <div class="card col-lg-2">
-              <img src="./assets/lille vs juventus.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">lille 1 vs juventus 1</h5>
-              </div>
-            </div><div class="card col-lg-2">
-              <img src="./assets/liverpool vs bayer leverkusen.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">liverpool 4 vs bayer leverkusen 0</h5>
-              </div>
-            </div>
-            <div class="card col-lg-2">
-              <img src="./assets/monaco vs bologna.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">bologna 0 vs monaco 1</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carta">
-            <div class="card col-lg-2">
-              <img src="./assets/psg vs atletico madrid}.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">psg 1 vs atletico madrid 2</h5>
-              </div>
-            </div>
-            <div class="card col-lg-2">
-              <img src="./assets/psv girona.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">psv 4 vs girona 0</h5>
-              </div>
-            </div><div class="card col-lg-2">
-              <img src="./assets/shakhtar vs young boys.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">shakhtar 2 vs young boys 1</h5>
-              </div>
-            </div>
-            <div class="card col-lg-2">
-              <img src="./assets/sparta praga vs brest.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">sparta praga 1 vs brest 2</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  <footer>
-    <nav class="menu">
-      <ul>
-        <a href="index.html"><img id="logoHeader" src="assets/logo blanco.png" alt=""></a>
-        <li><a href="./paginas/equipos.html">Equipos</a></li>
-        <li><a href="./paginas/highlights.html">Highlights</a></li>
-        <li><a href="./paginas/historia.html">Historia</a></li>
-        <li><a href="./paginas/pagN1.html">Clasificacion</a></li>
-        <li><a href="./paginas/sobre.html">Sobre</a></li>
-        <li><a href="./paginas/registro.html">Regristro</a></li>
-        <li><a href="./paginas/tienda.html">Tienda</a></li>
-      </ul>
-    </nav>
-    <div id="footer2">
-      <h6 id="Siguenos">Siguenos en:</h6>
-      <a href="https://x.com/UEFAcom_es"><img class="redes" src="assets/x.png" alt=""></a>
-      <a href="https://www.facebook.com/ChampionsLeague/"><img class="redes" src="assets/facebook.jpg" alt=""></a>
-      <a href="https://www.instagram.com/championsleague/"><img class="redes" src="assets/instagram.jpg" alt=""></a>
-      <a href="https://www.youtube.com/uefatv"><img class="redes" src="assets/youtube.jpg" alt=""></a>
-      <a href="https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?mt=8&path=apps%2fucl"><img id="store" src="assets/appstore.png" alt=""></a>
-      <a href="https://play.google.com/store/apps/details?id=com.uefa.ucl&pli=1"><img id="store" src="assets/googleplay.jpg" alt=""></a>
-      <img id="imgfinal" src="assets/footer.jpg" alt="">
-      <p id="terminos">© 1998-2024 UEFA. All rights reserved.
-        La palabra UEFA, el logo de la UEFA y todas las marcas relacionadas con las competiciones de la UEFA están
-        protegidas por las marcas registradas y/o por el copyright de UEFA. Se prohíbe el uso de estas marcas
-        registradas para uso comercial. El uso de UEFA.com significa la aceptación de sus Términos, Condiciones y
-        Política de Privacidad.</p>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

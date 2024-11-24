@@ -6,6 +6,7 @@
     height: $alto;
     width: $ancho;
 }
+
 #logoHeader{
     @extend .asd;
     @include medidas(50px, 50px)
@@ -60,7 +61,7 @@ header{
     margin-left: 50px;
     margin-bottom: 40px;
     margin-top: 40px;
-    @include medidas(400px, 685px)
+    @include medidas(400px, 685px);
 }
 #noticia{
     &:hover{
@@ -102,6 +103,8 @@ h4{
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 #terminos{
     margin-right: 30%;
@@ -132,6 +135,9 @@ h4{
 }
 #proximosPartidos{
     @include medidas(auto, 60px)
+}
+#momentos-texto{
+    text-align: center;
 }
 .imgs{
     display: flex;
@@ -188,9 +194,7 @@ h4{
     align-items: center;
     justify-content: space-around;
 }
-img{
-    @include medidas(150px, auto)
-}
+
 .carousel2{
     @include medidas(100px, auto)
 }
@@ -255,4 +259,150 @@ img{
 }
 .divGoleadores{
     @include medidas(540px, 100%)
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 1024px){
+    
+    #mejores{
+        @include medidas(300px, 585px);
+        margin-top: 4%;
+    }
+    
+    #tendencia{
+        font-size: 13px;
+    }
+
+    #foto{
+        @include medidas(170px, 155px);
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 769px){
+    
+    #mejores{
+        @include medidas(200px, 355px);
+        margin-top: 4%;
+    }
+    
+    #noticia{
+        @include medidas(60px, 100px)
+    }
+
+    #tendencia{
+        font-size: 13px;
+    }
+
+    #foto{
+        @include medidas(120px, 105px);
+    }
+
+    .card{
+        @include medidas(60px, 60px)
+    }
+
+    .card-img-top{
+        height: 120px;
+    }
+    
+    .card-title{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px){
+
+    #mejores{
+        @include medidas(180px, 335px);
+        margin-top: 4%;
+    }
+    
+    .contenedor{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #noticia{
+        @include medidas(50px, 90px)
+    }
+
+    #tendencia{
+        font-size: 9px;
+    }
+
+    #foto{
+        @include medidas(120px, 105px);
+    }
+
+    #carouselExampleIndicators{
+        @include medidas(320px, auto)
+    }
+
+    .card{
+        @include medidas(60px, 60px)
+    }
+
+    .card-img-top{
+        height: 90px;
+    }
+    
+    .card-title{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 320px){
+    .maintotal{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #mejores{
+        @include medidas(150px, 305px);
+        margin-left: 0;
+        margin-top: 4%;
+    }
+    
+    .contenedor{
+        width: 90%;
+    }
+
+    #noticia{
+        @include medidas(60px, 100px)
+    }
+
+    #tendencia{
+        font-size: 10px;
+    }
+
+    #foto{
+        @include medidas(100px, 85px);
+    }
+
+    .imgs{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #carouselExampleIndicators{
+        @include medidas(200px, auto)
+    }
+
+    .card{
+        @include medidas(60px, 70px)
+    }
+
+    .card-img-top{
+        width: 10px;
+        height: 50px;
+    }
+    
+    .card-title{
+        font-size: 5px;
+    }
 }
