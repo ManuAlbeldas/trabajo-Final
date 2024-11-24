@@ -16,7 +16,7 @@ ul {
 
 li {
   display: inline-block;
-  width: 23%;
+  width: 13%;
   position: relative;
   font-size: 14px; }
 
@@ -25,15 +25,11 @@ li {
   text-align: center; }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+  box-sizing: border-box; }
 
 #logoHeader {
-  width: 50px;
   height: 50px;
-  margin: 0;
-  padding: 0; }
+  width: 50px; }
 
 #titulo {
   text-align: center;
@@ -43,10 +39,11 @@ li {
   margin-left: 50px;
   margin-right: 50px;
   text-align: center;
-  width: 500px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
   margin-bottom: 40px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  height: auto;
+  width: 500px; }
 
 .hijo {
   display: flex;
@@ -80,21 +77,21 @@ header {
   background-color: #06174d; }
 
 #mejores {
-  width: 685px;
-  height: 400px;
   display: flex;
   margin-left: 50px;
   margin-bottom: 40px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  height: 400px;
+  width: 685px; }
 
 #noticia {
-  height: 80px;
-  width: 120px;
   display: flex;
   justify-content: center;
   margin-right: 30px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 10%; }
+  border-radius: 10%;
+  height: 80px;
+  width: 120px; }
   #noticia:hover {
     transform: scale(1.1);
     transition: transform 1s ease; }
@@ -114,9 +111,9 @@ h4 {
 
 .redes {
   border-radius: 100%;
+  transform: translate(-1000%, 280%);
   height: 30px;
-  width: 30px;
-  transform: translate(-1400%, 300%); }
+  width: 30px; }
 
 .maintotal {
   width: 100%;
@@ -134,7 +131,7 @@ h4 {
   margin-top: 50px;
   color: white;
   position: absolute;
-  transform: translate(0%, -150px);
+  transform: translate(0%, -170px);
   font-size: 11px;
   font-weight: bold;
   text-align: center; }
@@ -142,21 +139,23 @@ h4 {
 #imgfinal {
   height: 600px;
   width: 100%;
-  display: block; }
+  display: block;
+  height: 600px;
+  width: 100%; }
 
 #footer2 {
-  margin: 0;
-  padding: 0;
-  height: 100%;
   text-align: center;
-  position: relative; }
+  position: relative;
+  height: 100%;
+  width: auto; }
 
 #Siguenos {
   transform: translate(-41%, 630%);
   color: aliceblue; }
 
 #proximosPartidos {
-  height: 60px; }
+  height: auto;
+  width: 60px; }
 
 .imgs {
   display: flex;
@@ -178,16 +177,16 @@ h4 {
 #carouselExampleIndicators {
   text-align: center;
   overflow: hidden;
-  height: 400px;
-  margin: 0;
-  padding: 0;
   background-color: #06174d;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  height: 400px;
+  width: auto; }
 
 .card {
   margin-top: 50px;
   display: flex;
-  height: 500px; }
+  height: 500px;
+  width: auto; }
   .card h5, .card p {
     color: white; }
   .card .card-body {
@@ -209,20 +208,22 @@ h4 {
   justify-content: space-around; }
 
 img {
-  height: 150px; }
+  height: 150px;
+  width: auto; }
 
 .carousel2 {
-  height: 100px; }
+  height: 100px;
+  width: auto; }
 
-.asd {
+.asd, *, #logoHeader, #footer2, #carouselExampleIndicators {
   padding: 0;
   margin: 0; }
 
 #encabezado {
-  height: 365px;
-  width: 400px;
   margin-top: 50px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  height: 365px;
+  width: 400px; }
 
 .tarjetas {
   display: flex;
@@ -236,6 +237,11 @@ img {
   transform: translate(0%, 0%);
   height: 500px;
   width: 100%; }
+
+#store {
+  transform: translate(400%, 200%);
+  height: 40px;
+  width: 100px; }
 
 * {
   padding: 0;
