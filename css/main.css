@@ -525,11 +525,11 @@ section h2 {
 
 #registro_datos {
   background-color: white;
+  max-width: 500px;
+  margin: auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto; }
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); }
   #registro_datos #datos-usuario label {
     font-weight: bold;
     color: #1F3A93; }
@@ -581,6 +581,15 @@ section h2 {
 .star:hover,
 .star:hover ~ .star {
   color: gold; }
+
+@media screen and (max-width: 500px) {
+  #registro_datos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    max-width: 300px;
+    width: 100%; } }
 
 #logos {
   width: 50px;
