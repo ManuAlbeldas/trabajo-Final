@@ -179,6 +179,14 @@ section h2 {
   width: 100%;
   transform: translateX(-200px); }
 
+#img-viktor {
+  width: 250px;
+  height: 150px;
+  padding: 10px; }
+
+#img-viktor:hover {
+  transform: scale(1.1); }
+
 #equipos-linea1, #equipos-linea2, #equipos-linea3, #equipos-linea4 {
   margin: 0;
   padding: 20px;

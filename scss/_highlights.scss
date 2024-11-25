@@ -71,3 +71,12 @@ section h2 {
     transform: translateX(-200px);
 }
 
+#img-viktor{
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+}
+
+#img-viktor:hover{
+    transform: scale(1.1);
+}
