@@ -187,44 +187,84 @@ section h2 {
   width: 100%;
   transform: translateX(-200px); }
 
-#equipos-linea1, #equipos-linea2, #equipos-linea3, #equipos-linea4 {
-  margin: 0;
-  padding: 20px;
+#bannertexto {
+  text-align: start; }
+
+.padre-equipos {
+  margin: 40px;
+  border-radius: 10px;
+  padding: 100px;
   background-color: white;
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center; }
-  #equipos-linea1 div, #equipos-linea2 div, #equipos-linea3 div, #equipos-linea4 div {
-    height: 140px;
-    width: 90px; }
-  #equipos-linea1 p, #equipos-linea2 p, #equipos-linea3 p, #equipos-linea4 p {
+  .padre-equipos div {
+    height: 100px;
+    width: 60px;
+    margin: 50px; }
+  .padre-equipos p {
     text-align: center;
     color: black; }
-  #equipos-linea1 img, #equipos-linea2 img, #equipos-linea3 img, #equipos-linea4 img {
+  .padre-equipos img {
     height: 70%;
     width: 100%; }
 
-#equipos-amadrid img, #equipos-celtic img, #equipos-leipzig img, #equipos-psv img, #equipos-sgraz img {
-  height: 50%;
-  width: 100%;
-  margin-top: 30%; }
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  .padre-equipos div {
+    height: 100px;
+    width: 60px;
+    margin: 30px; }
+  .padre-equipos p {
+    font-size: 12px;
+    text-align: center;
+    color: black; }
+  .padre-equipos img {
+    height: 70%;
+    width: 100%; } }
 
-#equipos-eroja {
-  height: 98px;
-  width: 80px; }
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .padre-equipos div {
+    height: 100px;
+    width: 60px;
+    margin: 15px; }
+  .padre-equipos p {
+    font-size: 12px;
+    text-align: center;
+    color: black; }
+  .padre-equipos img {
+    height: 70%;
+    width: 100%; } }
 
-@media screen and (max-width: 1024px) and (min-width: 320px) {
-  #equipos-linea1, #equipos-linea2, #equipos-linea3, #equipos-linea4 {
-    width: 100%; }
-    #equipos-linea1 div, #equipos-linea2 div, #equipos-linea3 div, #equipos-linea4 div {
-      height: 140px;
-      width: 90px; }
-    #equipos-linea1 p, #equipos-linea2 p, #equipos-linea3 p, #equipos-linea4 p {
+@media screen and (max-width: 599px) and (min-width: 480px) {
+  .padre-equipos {
+    margin: 20px;
+    padding: 80px; }
+    .padre-equipos div {
+      height: 100px;
+      width: 60px;
+      margin: 0; }
+    .padre-equipos p {
       font-size: 12px;
       text-align: center;
       color: black; }
-    #equipos-linea1 img, #equipos-linea2 img, #equipos-linea3 img, #equipos-linea4 img {
+    .padre-equipos img {
+      height: 70%;
+      width: 100%; } }
+
+@media screen and (max-width: 479px) {
+  .padre-equipos {
+    margin: 0;
+    padding: 41px; }
+    .padre-equipos div {
+      height: 100px;
+      width: 60px;
+      margin: 0; }
+    .padre-equipos p {
+      font-size: 10px;
+      text-align: center;
+      color: black; }
+    .padre-equipos img {
       height: 70%;
       width: 100%; } }
 
