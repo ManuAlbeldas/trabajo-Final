@@ -333,11 +333,8 @@ section h2 {
 #estado-del-registro {
   display: flex;
   align-items: center;
-  justify-content: center; }
-  #estado-del-registro #mensajeerror {
-    color: red; }
-  #estado-del-registro #mensajeexito {
-    color: white; }
+  justify-content: center;
+  color: white; }
 
 .rating {
   display: flex;
