@@ -1,6 +1,14 @@
 ul{
     list-style: none;
     padding-left: 0rem;
+    img{
+            transition: all 0.5s;
+            &:hover{
+
+                transform: scale(1.1);
+                transition: all 0.5s;
+            }
+    }
     ul{
         position: absolute;
         display: none;
@@ -11,7 +19,11 @@ ul{
     }
     li{
         &:hover{
-            background-color: #000246;
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(1.2);
+                transition: all 0.5s;
+            }
             ul{
                 display: block;    
             }
@@ -22,6 +34,8 @@ ul{
         }
     }
 }
+
+
 
 li{
     color: white;
