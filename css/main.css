@@ -1,6 +1,11 @@
 ul {
   list-style: none;
   padding-left: 0rem; }
+  ul img {
+    transition: all 0.5s; }
+    ul img:hover {
+      transform: scale(1.1);
+      transition: all 0.5s; }
   ul ul {
     position: absolute;
     display: none;
@@ -8,7 +13,10 @@ ul {
     ul ul li {
       display: block; }
   ul li:hover {
-    background-color: #000246; }
+    transition: all 0.5s; }
+    ul li:hover:hover {
+      transform: scale(1.2);
+      transition: all 0.5s; }
     ul li:hover ul {
       display: block; }
   ul li a {
@@ -221,7 +229,7 @@ section h2 {
       width: 100%; } }
 
 .padre-tienda {
-  background-color: white;
+  box-shadow: 0 0 15px black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -232,7 +240,8 @@ section h2 {
     height: 150px;
     width: 170px; }
   .padre-tienda #hijo-reloj, .padre-tienda #hijo-souvenir, .padre-tienda #hijo-ropa, .padre-tienda #hijo-pelota {
-    color: black;
+    color: white;
+    text-shadow: 0 0 5px black;
     text-align: center; }
 
 .padre-venta img {
@@ -240,20 +249,31 @@ section h2 {
   width: 150px; }
 
 .padre-venta h3 {
+  margin-top: 2%;
+  margin-bottom: 2%;
   color: white; }
+
+.padre-venta a {
+  text-decoration: none; }
 
 #padre_items_venta {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: white; }
+  box-shadow: 0 0 15px black; }
   #padre_items_venta p {
-    color: black; }
+    color: white;
+    text-shadow: 0 0 5px black; }
   #padre_items_venta div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: all 0.3s;
+    box-shadow: 0 0 0; }
+    #padre_items_venta div:hover {
+      transform: scale(1.04);
+      transition: all 0.3s; }
 
 @media screen and (max-width: 1648px) and (min-width: 768px) {
   .padre-venta {
@@ -502,16 +522,20 @@ section h2 {
   justify-content: space-evenly;
   height: 540px;
   width: 100%; }
+  .divGoleadores #divGoleadores-hijo-1 img {
+    border-radius: 8px; }
   .divGoleadores #divGoleadores-hijo-2 {
     width: 55%;
     display: flex;
     align-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    overflow: hidden; }
     .divGoleadores #divGoleadores-hijo-2 img {
       height: 240px;
       width: 200px;
-      padding: 2%; }
+      padding: 2%;
+      border-radius: 28px; }
 
 #bannertexto {
   margin: 0;
@@ -616,6 +640,8 @@ section h2 {
     justify-content: space-between;
     width: 100%;
     margin: 5px;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 30px; }
     .tarjetas .card {
       width: 240px; }
@@ -623,6 +649,14 @@ section h2 {
         font-size: 15px; }
       .tarjetas .card .card-body .card-text {
         font-size: 12px; }
+  .divGoleadores {
+    display: flex;
+    flex-wrap: wrap; }
+    .divGoleadores #divGoleadores-hijo-1 {
+      width: 100%; }
+    .divGoleadores #divGoleadores-hijo-2 img {
+      height: 120px;
+      width: 80px; }
   .grid-sobrechampions {
     display: grid;
     grid-template-columns: 1fr;
@@ -639,6 +673,46 @@ section h2 {
     height: 100%; } }
 
 @media screen and (max-width: 768px) and (min-width: 500px) {
+  .principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .principal .banner-padre {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0; }
+    .principal #encabezado {
+      margin-top: 20px;
+      height: 300px;
+      width: 325px; }
+    .principal .tarjetas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      margin: 5px;
+      margin-bottom: 30px; }
+      .principal .tarjetas .card {
+        width: 300px;
+        margin: 20px; }
+        .principal .tarjetas .card .card-img-top {
+          height: 180px; }
+        .principal .tarjetas .card .card-body .card-title {
+          font-size: 15px; }
+        .principal .tarjetas .card .card-body .card-text {
+          font-size: 12px; }
+  .divGoleadores #divGoleadores-hijo-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .divGoleadores #divGoleadores-hijo-1 img {
+      height: 400px;
+      width: 400px; }
+  .divGoleadores #divGoleadores-hijo-2 {
+    display: none; }
   .grid-sobrechampions {
     display: grid;
     grid-template-columns: 1fr;
