@@ -192,8 +192,12 @@ section h2 {
   height: 150px;
   padding: 10px; }
 
-#img-viktor:hover {
-  transform: scale(1.1); }
+#img-viktor {
+  transition: all 0.5s;
+  border-radius: 16px; }
+  #img-viktor:hover {
+    transform: scale(1.1);
+    transition: all 0.5s; }
 
 #bannertexto {
   text-align: start; }
