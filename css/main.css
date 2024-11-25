@@ -629,8 +629,8 @@ section h2 {
   padding: 20px;
   background-color: white;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: baseline;
+  justify-content: space-between;
   text-align: center; }
   #equipos-linea1 div, #equipos-linea2 div, #equipos-linea3 div, #equipos-linea4 div {
     height: 140px;
@@ -658,6 +658,7 @@ section h2 {
       height: 140px;
       width: 90px; }
     #equipos-linea1 p, #equipos-linea2 p, #equipos-linea3 p, #equipos-linea4 p {
+      font-size: 12px;
       text-align: center;
       color: black; }
     #equipos-linea1 img, #equipos-linea2 img, #equipos-linea3 img, #equipos-linea4 img {
