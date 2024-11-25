@@ -671,7 +671,10 @@ section h2 {
 
 .body {
   background-image: url(../assets/fondo.png);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 #bannertexto {
   margin: 0;
@@ -808,9 +811,16 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: space-around; }
+  .padre-tienda img {
+    height: 150px;
+    width: 170px; }
   .padre-tienda #hijo-reloj, .padre-tienda #hijo-souvenir, .padre-tienda #hijo-ropa, .padre-tienda #hijo-pelota {
     color: black;
     text-align: center; }
+
+.padre-venta img {
+  height: 150px;
+  width: 150px; }
 
 .padre-venta h3 {
   color: white; }

@@ -1,10 +1,16 @@
-
+@mixin medidas($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+}
 
 .padre-tienda{
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    img{
+        @include medidas(150px, 170px)
+    }
     #hijo-reloj{
         color: black;
         text-align: center;
@@ -24,6 +30,9 @@
 }
 
 .padre-venta{
+    img{
+        @include medidas(150px, 150px)
+    }
     h3{
         color: white;
     }
