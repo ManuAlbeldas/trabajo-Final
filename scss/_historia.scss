@@ -11,35 +11,6 @@
     background-attachment: fixed;
 }
 
-.banner-padre{
-    margin-left: 40px;
-}
-
-#encabezado{
-    margin-top: 50px;
-    border-radius: 5px;
-    @include medidas(365px, 400px)
-
-}
-.tarjetas{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin-right: 40px;
-    margin-bottom: 30px;
-}
-
-.card-body{
-    background-color: white;
-    h5, p{
-        color: black;
-    }
-}
-
-.principal{
-    display: flex;
-    justify-content: space-between;
-}
 
 .representacion-padre{
     display: flex;
@@ -51,45 +22,65 @@
     }
 }
 
+.principal{
+    display: flex;
+    .banner-padre{
+        margin-left: 10%;
+        width: 30%;
+    }
+    #encabezado{
+        margin-top: 50px;
+        border-radius: 5px;
+        @include medidas(57%, 70%)
+    }
+    .tarjetas{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        .card{
+            display: flex;
+            justify-content: space-around;
+            @include medidas(29%, auto);
+            .card-img-top{
+                @include medidas(100%, 33%);
+            }
+            .card-body{
+                background-color: white;
+                h5, p{
+                    color: black;
+                }
+            }
+        }
+    }
+}
 
-#goleadores{
-    margin-bottom: 10px;
-    margin-left: 20px;
-    @include medidas(500px, 400px)
+
+
+
+.principal{
+    display: flex;
+    justify-content: space-between;
 }
-#goleador1{
-    transform: translate( 20%, -78%);
-    @include medidas(200px, 150px)
-}
-#goleador2{
-    transform: translate( -50%, 50%);
-    @include medidas(150px, 150px)
-}
-#goleador3{
-    transform: translate( -30%, -70%);
-    @include medidas(150px, 200px)
-}
-#goleador4{
-    transform: translate( -200%, 70%);
-    @include medidas(150px, 120px)
-}
-#goleador6{
-    transform: translate( -20%, -120%);
-    @extend #goleador3;
-}
-#goleador7{
-    transform: translate( 600%, -160%);
-    @extend #goleador1;
-}
-#goleador8{
-    transform: translate( 670%, -135%);
-    @include medidas(200px, 150px)
-}
+
+
 .divGoleadores{
     display: flex;
-    align-items: center;
-    @include medidas(540px, 100%);
-    overflow: hidden;
+    justify-content: space-evenly;
+    @include medidas(100%, 540px);
+    #divGoleadores-hijo-2{
+        width: 55%;
+        display: flex;
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        img{
+            @include medidas(200px, 240px);
+            padding: 2%;
+        }
+    }
 }
 
 
@@ -207,7 +198,7 @@
 
 @media screen and (max-width: 1648px) and (min-width: 1025px){
     #encabezado{
-        @include medidas(305px, 340px)
+        @include medidas(340px, 305px)
     }
 
     .card{
@@ -356,7 +347,7 @@
 
 @media screen and (max-width: 499px){
     #representacion{
-        @include medidas(230px, 100%)
+        @include medidas(100%, 230px)
     }
     
     .principal{
