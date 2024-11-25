@@ -1,6 +1,11 @@
 ul {
   list-style: none;
   padding-left: 0rem; }
+  ul img {
+    transition: all 0.5s; }
+    ul img:hover {
+      transform: scale(1.1);
+      transition: all 0.5s; }
   ul ul {
     position: absolute;
     display: none;
@@ -8,7 +13,10 @@ ul {
     ul ul li {
       display: block; }
   ul li:hover {
-    background-color: #000246; }
+    transition: all 0.5s; }
+    ul li:hover:hover {
+      transform: scale(1.2);
+      transition: all 0.5s; }
     ul li:hover ul {
       display: block; }
   ul li a {
@@ -221,7 +229,7 @@ section h2 {
       width: 100%; } }
 
 .padre-tienda {
-  background-color: white;
+  box-shadow: 0 0 15px black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -232,7 +240,8 @@ section h2 {
     height: 150px;
     width: 170px; }
   .padre-tienda #hijo-reloj, .padre-tienda #hijo-souvenir, .padre-tienda #hijo-ropa, .padre-tienda #hijo-pelota {
-    color: black;
+    color: white;
+    text-shadow: 0 0 5px black;
     text-align: center; }
 
 .padre-venta img {
@@ -240,20 +249,31 @@ section h2 {
   width: 150px; }
 
 .padre-venta h3 {
+  margin-top: 2%;
+  margin-bottom: 2%;
   color: white; }
+
+.padre-venta a {
+  text-decoration: none; }
 
 #padre_items_venta {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: white; }
+  box-shadow: 0 0 15px black; }
   #padre_items_venta p {
-    color: black; }
+    color: white;
+    text-shadow: 0 0 5px black; }
   #padre_items_venta div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: all 0.3s;
+    box-shadow: 0 0 0; }
+    #padre_items_venta div:hover {
+      transform: scale(1.04);
+      transition: all 0.3s; }
 
 @media screen and (max-width: 1648px) and (min-width: 768px) {
   .padre-venta {

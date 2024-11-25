@@ -4,7 +4,7 @@
 }
 
 .padre-tienda{
-    background-color: white;
+    box-shadow: 0 0 15px black;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -15,7 +15,8 @@
         @include medidas(150px, 170px);
     }
     #hijo-reloj{
-        color: black;
+        color: white;
+        text-shadow: 0 0 5px black;
         text-align: center;
     }
 
@@ -37,7 +38,12 @@
         @include medidas(150px, 150px)
     }
     h3{
+        margin-top: 2%;
+        margin-bottom: 2%;
         color: white;
+    }
+    a{
+        text-decoration: none;
     }
 }
 
@@ -45,15 +51,22 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: white;
+    box-shadow: 0 0 15px black;
     p{
-        color: black;
+        color: white;
+        text-shadow: 0 0 5px black;
     }
     div{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        transition: all 0.3s;
+        box-shadow: 0 0 0;
+        &:hover{
+            transform: scale(1.04);
+            transition: all 0.3s;
+        }
     }
 }
 
