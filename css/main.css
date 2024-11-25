@@ -981,6 +981,75 @@ h4 {
   padding: 0;
   margin: 0; }
 
+#jugador1 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(700%, -100px); }
+
+#jugador2 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(330%, -160px); }
+
+#jugador3 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(340%, -130px); }
+
+#jugador4 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(500%, -130px); }
+
+#jugador5 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(520%, -160px); }
+
+#jugador6 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(145%, -190px); }
+
+#jugador7 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(-90%, -240px); }
+
+#jugador8 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(50%, -240px); }
+
+#jugador9 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(-370%, -310px); }
+
+#jugador10 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(-300%, -325px); }
+
+#jugador11 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transform: translate(-220%, -310px); }
+
+#cont_CampoDeJuego {
+  display: flex; }
+
 #logos {
   width: 50px;
   height: 50px; }
