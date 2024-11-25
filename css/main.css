@@ -336,10 +336,19 @@ section h2 {
 @media screen and (max-width: 767px) {
   .padre-tienda {
     display: none; }
-  #padre_items_venta {
-    width: 750px; }
-    #padre_items_venta p {
-      font-size: 14px; } }
+  .padre-venta {
+    width: auto; }
+    .padre-venta img {
+      height: 75px;
+      width: 75px; }
+    .padre-venta h3 {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      color: white; }
+    .padre-venta a {
+      text-decoration: none; }
+  #padre_items_venta p {
+    font-size: 10px; } }
 
 .container-registro h2 {
   color: white;
