@@ -915,18 +915,9 @@ header {
   #tendencia:hover {
     color: gray; }
 
-footer {
-  background-color: #000246; }
-
 h4 {
   margin-left: 20px;
   color: black; }
-
-.redes {
-  border-radius: 100%;
-  transform: translate(-1000%, 280%);
-  height: 30px;
-  width: 30px; }
 
 .maintotal {
   width: 100%;
@@ -940,33 +931,12 @@ h4 {
   align-items: center;
   justify-content: space-around; }
 
-#terminos {
-  margin-right: 30%;
-  margin-left: 30%;
-  margin-top: 50px;
-  color: white;
-  position: absolute;
-  transform: translate(0%, -170px);
-  font-size: 11px;
-  font-weight: bold;
-  text-align: center; }
-
 #imgfinal {
   height: 600px;
   width: 100%;
   display: block;
   height: 600px;
   width: 100%; }
-
-#footer2 {
-  text-align: center;
-  position: relative;
-  height: 100%;
-  width: auto; }
-
-#Siguenos {
-  transform: translate(-41%, 630%);
-  color: aliceblue; }
 
 #proximosPartidos {
   height: auto;
@@ -1029,7 +999,7 @@ h4 {
   height: 100px;
   width: auto; }
 
-.asd, *, #logoHeader, #footer2, #carouselExampleIndicators {
+.asd, *, #logoHeader, #carouselExampleIndicators {
   padding: 0;
   margin: 0; }
 
