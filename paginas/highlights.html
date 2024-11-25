@@ -13,17 +13,31 @@
 </head>
 <body id="body-highlights">
    
-    <header class="header">
-        <nav class="menu">
-          <ul>
-            <img id="logoHeader" src="../assets/logo blanco.png" alt="">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Relojes</a></li>
-            <li><a href="#">Colaboraciones</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <nav class="padre-menu">
+        <ul>
+            <a href="../index.html"><img id="logoHeader" src="../assets/logo blanco.png" alt=""></a>
+            <li id="menu-equipos"><a href="../paginas/equipos.html">Equipos</a></li>
+            <li id="menu-highlights"><a href="../paginas/highlights.html">Highlights</a></li>
+            <li id="menu-historia"><a href="../paginas/historia.html">Historia</a></li>
+            <li id="menu-clasificacion"><a href="../paginas/pagN1.html">Clasificacion</a></li>
+            <li id="menu-sobre"><a href="../paginas/sobre.html">Sobre</a></li>
+            <li id="menu-registro"><a href="../paginas/registro.html">Registro</a></li>
+            <li id="menu-tienda"><a href="../paginas/tienda.html">Tienda</a></li>
+            <li class="menu-desplegable-padre">Más... 
+                <ul>
+                    <li id="menu-equipos-hijo"><a href="../paginas/equipos.html">Equipos</a></li>
+                    <li id="menu-highlights-hijo"><a href="../paginas/highlights.html">Highlights</a></li>
+                    <li id="menu-historia-hijo"><a href="../paginas/historia.html">Historia</a></li>
+                    <li id="menu-clasificacion-hijo"><a href="../paginas/pagN1.html">Clasificacion</a></li>
+                    <li id="menu-sobre-hijo"><a href="../paginas/sobre.html">Sobre</a></li>
+                    <li id="menu-registro-hijo"><a href="../paginas/registro.html">Registro</a></li>
+                    <li id="menu-tienda-hijo"><a href="../paginas/tienda.html">Tienda</a></li>
+                </ul>
+            </li> 
+        </ul>
+    </nav>
+</header>
 
     <div class="row container-fluid">
         <div class="cont1 col-lg-12">
@@ -32,7 +46,7 @@
                 <div class="col-lg-6">
                     <h4><strong>Mejores asistencias de las ultimas jornadas</strong></h4>
                     <h6>Hace 13 días</h6>
-                    <p>Mira las excelentes asistencias de algunos partidos de las ultimas jornadas disputadas de la Champions League</p>
+                    <p id="p-highlights">Mira las excelentes asistencias de algunos partidos de las ultimas jornadas disputadas de la Champions League</p>
                 </div>
                 <div class="col-lg-6">
                     <div id="scroller" class="content">
@@ -41,7 +55,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <p>Jornada 4: Las mejores asistencias del miércoles</p>
+                                        <p id="p-highlights">Jornada 4: Las mejores asistencias del miércoles</p>
                                       </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -57,7 +71,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <p>Jornada 4: Las mejores asistencias del martes</p>
+                                        <p id="p-highlights">Jornada 4: Las mejores asistencias del martes</p>
                                       </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -73,7 +87,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <p>Asistencias: Observa el magnífico pase de Yamal</p>
+                                        <p id="p-highlights">Asistencias: Observa el magnífico pase de Yamal</p>
                                       </button>
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -89,7 +103,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        <p>Asistencias del día: Guirassy y Chukwueze</p>
+                                        <p id="p-highlights">Asistencias del día: Guirassy y Chukwueze</p>
                                       </button>
                                     </h2>
                                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -105,7 +119,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        <p>Asistencias: el gran pase de Pau Torres a Villa</p>
+                                        <p id="p-highlights">Asistencias: el gran pase de Pau Torres a Villa</p>
                                       </button>
                                     </h2>
                                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -121,7 +135,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        <p>Asistencias del día: Mira la preparación de Foden</p>
+                                        <p id="p-highlights">Asistencias del día: Mira la preparación de Foden</p>
                                       </button>
                                     </h2>
                                     <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -137,7 +151,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                        <p>Asistencias del día: Griezmann y Vanderson</p>
+                                        <p id="p-highlights">Asistencias del día: Griezmann y Vanderson</p>
                                       </button>
                                     </h2>
                                     <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -153,7 +167,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                        <p>Asistencias del día: Musiala y Rodrygo</p>
+                                        <p id="p-highlights">Asistencias del día: Musiala y Rodrygo</p>
                                       </button>
                                     </h2>
                                     <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -182,13 +196,13 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="flase" aria-controls="collapseNine">
-                                        <p>Jornada 4: Las mejores asistencias del miércoles</p>
+                                        <p id="p-highlights">Jornada 4 de la Champions League: las mejores paradas del martes</p>
                                       </button>
                                     </h2>
                                     <div id="collapseNine" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
                                       <div class="accordion-body">
                                         <video width="100%" controls>
-                                            <source src="../assets/trailer 1.mp4" type="video/mp4">
+                                            <source src="../assets/km_video salvadas 1_540p_30f_20241125_134103.mp4" type="video/mp4">
                                         </video>
                                       </div>
                                     </div>
@@ -198,13 +212,13 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                        <p>Jornada 4: Las mejores asistencias del martes</p>
+                                        <p id="p-highlights">Las paradas más destacadas del miércoles en la jornada 3 de la Champions League</p>
                                       </button>
                                     </h2>
                                     <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                       <div class="accordion-body">
                                         <video width="100%" controls>
-                                            <source src="../assets/trailer 2.mp4" type="video/mp4">
+                                            <source src="../assets/km_salvadas 2_540p_30f_20241125_144342.mp4" type="video/mp4">
                                         </video>
                                       </div>
                                     </div>
@@ -214,13 +228,13 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                                        <p>Asistencias: Observa el magnífico pase de Yamal</p>
+                                        <p id="p-highlights">Jornada 3 de la Champions League: las mejores paradas del martes</p>
                                       </button>
                                     </h2>
                                     <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                       <div class="accordion-body">
                                         <video width="100%" controls>
-                                            <source src="../assets/trailer 3.mp4" type="video/mp4">
+                                            <source src="../assets/km_salvadas 3_540p_30f_20241125_145001.mp4" type="video/mp4">
                                         </video>
                                       </div>
                                     </div>
@@ -230,12 +244,14 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                                        <p>Asistencias del día: Guirassy y Chukwueze</p>
+                                        <p id="p-highlights">Jornada 2 de la Champions League: las mejores paradas del miércoles</p>
                                       </button>
                                     </h2>
                                     <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                       <div class="accordion-body">
-                                        
+                                        <video width="100%" controls>
+                                          <source src="../assets/km_salvadas 4_540p_30f_20241125_145502.mp4" type="video/mp4">
+                                      </video>
                                       </div>
                                     </div>
                                 </div>
@@ -244,12 +260,14 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                                        <p>Asistencias: el gran pase de Pau Torres a Villa</p>
+                                        <p id="p-highlights">Jornada 2 de la Champions League: las mejores paradas del martes</p>
                                       </button>
                                     </h2>
                                     <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                       <div class="accordion-body">
-                                        
+                                        <video width="100%" controls>
+                                          <source src="../assets/km_salvadas 5_540p_30f_20241125_145750.mp4" type="video/mp4">
+                                      </video>
                                       </div>
                                     </div>
                                 </div>
@@ -258,12 +276,14 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                       <button class="accordion-button collapsed cont2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-                                        <p>Asistencias del día: Mira la preparación de Foden</p>
+                                        <p id="p-highlights">Mira las mejores paradas de la jornada 1 de la Champions League</p>
                                       </button>
                                     </h2>
                                     <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                       <div class="accordion-body">
-                                        
+                                        <video width="100%" controls>
+                                          <source src="../assets/km_salvadas 6_540p_30f_20241125_150316.mp4" type="video/mp4">
+                                      </video>
                                       </div>
                                     </div>
                                 </div>
@@ -274,12 +294,63 @@
                 <div class="col-lg-6">
                     <h4><strong>Mejores Atajadas de las ultimas Jornadas</strong></h4>
                     <h6>Hace 7 días</h6>
-                    <p>Vean las mejores paradas de las ultimas jornadas disputadas en la Champions League</p>
+                    <p id="p-highlights">Vean las mejores paradas de las ultimas jornadas disputadas en la Champions League</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <footer class="footer">
+      <nav class="padre-menu">
+          <ul>
+              <a href="../index.html"><img id="logoHeader" src="../assets/logo blanco.png" alt=""></a>
+              <li id="menu-equipos"><a href="../paginas/equipos.html">Equipos</a></li>
+              <li id="menu-highlights"><a href="../paginas/highlights.html">Highlights</a></li>
+              <li id="menu-historia"><a href="../paginas/historia.html">Historia</a></li>
+              <li id="menu-clasificacion"><a href="../paginas/pagN1.html">Clasificacion</a></li>
+              <li id="menu-sobre"><a href="../paginas/sobre.html">Sobre</a></li>
+              <li id="menu-registro"><a href="../paginas/registro.html">Registro</a></li>
+              <li id="menu-tienda"><a href="../paginas/tienda.html">Tienda</a></li>
+              <li class="menu-desplegable-padre">Más... 
+                  <ul>
+                      <li id="menu-equipos-hijo"><a href="../paginas/equipos.html">Equipos</a></li>
+                      <li id="menu-highlights-hijo"><a href="../paginas/highlights.html">Highlights</a></li>
+                      <li id="menu-historia-hijo"><a href="../paginas/historia.html">Historia</a></li>
+                      <li id="menu-clasificacion-hijo"><a href="../paginas/pagN1.html">Clasificacion</a></li>
+                      <li id="menu-sobre-hijo"><a href="../paginas/sobre.html">Sobre</a></li>
+                      <li id="menu-registro-hijo"><a href="../paginas/registro.html">Registro</a></li>
+                      <li id="menu-tienda-hijo"><a href="../paginas/tienda.html">Tienda</a></li>
+                  </ul>
+              </li> 
+          </ul>
+      </nav>
+      <div class="footer-hijo">
+          <div class="redes-padre">
+              <div id="redes-hijo1">
+                  <h6 id="Siguenos">Siguenos en:</h6>
+              </div>
+              <div id="redes-hijo2">
+                  <a href="https://x.com/UEFAcom_es"><img class="redes" src="../assets/x.png" alt=""></a>
+                  <a href="https://www.facebook.com/ChampionsLeague/"><img class="redes" src="../assets/facebook.jpg" alt=""></a>
+                  <a href="https://www.instagram.com/championsleague/"><img class="redes" src="../assets/instagram.jpg" alt=""></a>
+                  <a href="https://www.youtube.com/uefatv"><img class="redes" src="../assets/youtube.jpg" alt=""></a>
+              </div>
+          </div>
+          <br>
+          <div class="terminos-y-condiciones-padre">
+              <p id="terminos-hijo">© 1998-2024 UEFA. All rights reserved.
+                  La palabra UEFA, el logo de la UEFA y todas las marcas relacionadas con las competiciones de la UEFA están
+                  protegidas por las marcas registradas y/o por el copyright de UEFA. Se prohíbe el uso de estas marcas
+                  registradas para uso comercial. El uso de UEFA.com significa la aceptación de sus Términos, Condiciones y
+                  Política de Privacidad.</p>
+          </div>
+          <br>
+          <div class="tiendavirtual-padre">
+              <a href="https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?mt=8&path=apps%2fucl"><img id="store" src="../assets/appstore.png" alt=""></a>
+              <a href="https://play.google.com/store/apps/details?id=com.uefa.ucl&pli=1"><img id="store" src="../assets/googleplay.jpg" alt=""></a>
+          </div>
+      </div>
+  </footer>
     
 </body>
 </html>
