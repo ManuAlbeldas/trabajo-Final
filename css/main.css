@@ -292,9 +292,9 @@ h4 {
   height: 500px;
   width: auto; }
   .card h5, .card p {
-    color: white; }
+    color: black; }
   .card .card-body {
-    background-color: black; }
+    background-color: white; }
 
 .active {
   display: flex;
@@ -665,154 +665,14 @@ section h2 {
       height: 70%;
       width: 100%; } }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-.body {
-  background-image: url(../assets/fondo.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
-
-#bannertexto {
-  margin: 0;
-  padding: 20px;
-  width: 100%;
-  color: white;
-  text-shadow: 2px 1px 5px black;
-  text-align: center; }
-
-.grid-sobrechampions {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 'noticia1 noticia2' 'noticia3 noticia4' 'noticia5 noticia6' 'noticia7 noticia8';
-  height: 100%;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
-  padding: 50px; }
-
-.noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
-  background-color: white;
-  grid-area: noticia1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px; }
-  .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
-    text-align: start;
-    font-size: larger;
-    padding: 20px;
-    color: black;
-    margin-left: 0;
-    margin-bottom: 0; }
-
-.noticia2 {
-  grid-area: noticia2; }
-
-.noticia3 {
-  grid-area: noticia3; }
-
-.noticia4 {
-  grid-area: noticia4; }
-
-.noticia5 {
-  grid-area: noticia5; }
-
-.noticia6 {
-  grid-area: noticia6; }
-
-.noticia7 {
-  grid-area: noticia7; }
-
-.noticia8 {
-  grid-area: noticia8; }
-
-#trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
-  height: 100%;
-  width: 360px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px; }
-
-@media screen and (max-width: 1648px) and (min-width: 1025px) {
-  .grid-sobrechampions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 'noticia1 noticia2' 'noticia3 noticia4' 'noticia5 noticia6' 'noticia7 noticia8';
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    padding: 20px; }
-  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
-    height: 140px; }
-    .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
-      font-size: 12px;
-      padding: 7px; }
-  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
-    width: 240px;
-    height: 100%; } }
-
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-  .grid-sobrechampions {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
-    grid-column-gap: 0;
-    grid-row-gap: 20px; }
-  #textotrofeo, .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
-    font-size: 18px;
-    color: #424242;
-    padding: 10px; }
-  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
-    width: 270px;
-    height: 100%; } }
-
-@media screen and (max-width: 767px) and (min-width: 500px) {
-  .grid-sobrechampions {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
-    grid-row-gap: 20px; }
-  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
-    height: 100px; }
-    .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
-      font-size: 10px; }
-  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
-    width: 270px;
-    height: 100%; }
-  #goleadoresmaximos {
-    width: 180px;
-    height: 100%; } }
-
-@media screen and (max-width: 499px) {
-  .grid-sobrechampions {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
-    height: 100%;
-    grid-row-gap: 20px;
-    padding: 20px; }
-  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
-    height: 80px; }
-    .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
-      font-size: 7px;
-      padding: 5px; }
-  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
-    width: 120px;
-    height: 100%; } }
-
 .padre-tienda {
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 98%;
-  margin-left: 1%; }
+  margin-left: 1%;
+  opacity: 1; }
   .padre-tienda img {
     height: 150px;
     width: 170px; }
@@ -1031,6 +891,488 @@ section h2 {
 
 #noti {
   color: white; }
+
+.body {
+  background-image: url(../assets/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.banner-padre {
+  margin-left: 40px; }
+
+#encabezado {
+  margin-top: 50px;
+  border-radius: 5px;
+  height: 400px;
+  width: 365px; }
+
+.tarjetas {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 40px;
+  margin-bottom: 30px; }
+
+.card-body {
+  background-color: white; }
+  .card-body h5, .card-body p {
+    color: black; }
+
+.principal {
+  display: flex;
+  justify-content: space-between; }
+
+.representacion-padre {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .representacion-padre #representacion {
+    height: 50%;
+    width: 50%;
+    border-radius: 8px; }
+
+#goleadores {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  height: 400px;
+  width: 500px; }
+
+#goleador1, #goleador7 {
+  transform: translate(20%, -78%);
+  height: 150px;
+  width: 200px; }
+
+#goleador2 {
+  transform: translate(-50%, 50%);
+  height: 150px;
+  width: 150px; }
+
+#goleador3, #goleador6 {
+  transform: translate(-30%, -70%);
+  height: 200px;
+  width: 150px; }
+
+#goleador4 {
+  transform: translate(-200%, 70%);
+  height: 120px;
+  width: 150px; }
+
+#goleador6 {
+  transform: translate(-20%, -120%); }
+
+#goleador7 {
+  transform: translate(600%, -160%); }
+
+#goleador8 {
+  transform: translate(670%, -135%);
+  height: 150px;
+  width: 200px; }
+
+.divGoleadores {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 540px;
+  overflow: hidden; }
+
+#bannertexto {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  text-shadow: 2px 1px 5px black;
+  text-align: center; }
+
+.grid-sobrechampions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'noticia1 noticia2' 'noticia3 noticia4' 'noticia5 noticia6' 'noticia7 noticia8';
+  height: 100%;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  padding: 50px; }
+
+.noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+  background-color: white;
+  grid-area: noticia1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; }
+  .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+    text-align: start;
+    font-size: larger;
+    padding: 20px;
+    color: black;
+    margin-left: 0;
+    margin-bottom: 0; }
+
+.noticia2 {
+  grid-area: noticia2; }
+
+.noticia3 {
+  grid-area: noticia3; }
+
+.noticia4 {
+  grid-area: noticia4; }
+
+.noticia5 {
+  grid-area: noticia5; }
+
+.noticia6 {
+  grid-area: noticia6; }
+
+.noticia7 {
+  grid-area: noticia7; }
+
+.noticia8 {
+  grid-area: noticia8; }
+
+#trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+  height: 100%;
+  width: 360px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px; }
+
+@media screen and (max-width: 1648px) and (min-width: 1025px) {
+  #encabezado {
+    height: 340px;
+    width: 305px; }
+  .card {
+    width: 180px; }
+    .card .card-body .card-title {
+      font-size: 15px; }
+    .card .card-body .card-text {
+      font-size: 15px; }
+  .grid-sobrechampions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'noticia1 noticia2' 'noticia3 noticia4' 'noticia5 noticia6' 'noticia7 noticia8';
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 20px; }
+  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+    height: 140px; }
+    .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+      font-size: 12px;
+      padding: 7px; }
+  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+    width: 240px;
+    height: 100%; } }
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .banner-padre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0; }
+  .tarjetas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 30px; }
+    .tarjetas .card {
+      width: 240px; }
+      .tarjetas .card .card-body .card-title {
+        font-size: 15px; }
+      .tarjetas .card .card-body .card-text {
+        font-size: 12px; }
+  .grid-sobrechampions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
+    grid-column-gap: 0;
+    grid-row-gap: 20px; }
+  #textotrofeo, .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+    font-size: 18px;
+    color: #424242;
+    padding: 10px; }
+  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+    width: 270px;
+    height: 100%; } }
+
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .grid-sobrechampions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
+    grid-row-gap: 20px; }
+  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+    height: 100px; }
+    .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+      font-size: 10px; }
+  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+    width: 270px;
+    height: 100%; }
+  #goleadoresmaximos {
+    width: 180px;
+    height: 100%; } }
+
+@media screen and (max-width: 499px) {
+  #representacion {
+    height: 100%;
+    width: 230px; }
+  .principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .banner-padre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0; }
+  #encabezado {
+    margin-top: 20px;
+    height: 300px;
+    width: 325px; }
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 30px; }
+    .tarjetas .card {
+      width: 300px;
+      margin: 20px; }
+      .tarjetas .card .card-img-top {
+        height: 180px; }
+      .tarjetas .card .card-body .card-title {
+        font-size: 15px; }
+      .tarjetas .card .card-body .card-text {
+        font-size: 12px; }
+  #divGoleadores-hijo-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #divGoleadores-hijo-2 {
+    display: none; }
+  .grid-sobrechampions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'noticia1' 'noticia2' 'noticia3' 'noticia4' 'noticia5' 'noticia6' 'noticia7' 'noticia8';
+    height: 100%;
+    grid-row-gap: 20px;
+    padding: 20px; }
+  .noticia1, .noticia2, .noticia3, .noticia4, .noticia5, .noticia6, .noticia7, .noticia8 {
+    height: 80px; }
+    .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4, .noticia7 h4, .noticia8 h4 {
+      font-size: 7px;
+      padding: 5px; }
+  #trofeo, #realmadrid, #allianzarena, #todosloscampeones, #goleadoresmaximos, #goleadoresxequipo, #creacion, #finalchampions {
+    width: 120px;
+    height: 100%; } }
+
+* {
+  box-sizing: border-box; }
+
+#logoHeader {
+  height: 50px;
+  width: 50px; }
+
+#titulo {
+  text-align: center;
+  color: white; }
+
+.contenedor {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+  margin-top: 40px;
+  height: auto;
+  width: 500px; }
+
+.hijo {
+  display: flex;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 5px;
+  cursor: pointer;
+  text-align: center; }
+
+.parte-1 {
+  background-color: #06174d;
+  grid-column: 1/4;
+  display: flex; }
+
+.parte-2 {
+  background-color: #06174d;
+  grid-column: 1/4;
+  display: flex; }
+
+.parte-3 {
+  background-color: #06174d;
+  grid-column: 1/4;
+  display: flex; }
+
+.parte-4 {
+  background-color: #06174d;
+  grid-column: 1/4;
+  display: flex; }
+
+header {
+  background-color: #06174d; }
+
+#mejores {
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  height: 400px;
+  width: 685px; }
+
+#noticia {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
+  height: 80px;
+  width: 120px; }
+  #noticia:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease; }
+
+#tendencia {
+  font-size: 20px;
+  color: white; }
+  #tendencia:hover {
+    color: gray; }
+
+footer {
+  background-color: #000246; }
+
+h4 {
+  margin-left: 20px;
+  color: black; }
+
+.redes {
+  border-radius: 100%;
+  transform: translate(-1000%, 280%);
+  height: 30px;
+  width: 30px; }
+
+.maintotal {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+#terminos {
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-top: 50px;
+  color: white;
+  position: absolute;
+  transform: translate(0%, -170px);
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center; }
+
+#imgfinal {
+  height: 600px;
+  width: 100%;
+  display: block;
+  height: 600px;
+  width: 100%; }
+
+#footer2 {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: auto; }
+
+#Siguenos {
+  transform: translate(-41%, 630%);
+  color: aliceblue; }
+
+#proximosPartidos {
+  height: auto;
+  width: 60px; }
+
+#momentos-texto {
+  text-align: center; }
+
+.imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center; }
+
+#foto {
+  margin-top: 40px;
+  border-radius: 10px;
+  transition: transform 1s ease;
+  margin-bottom: 4cqw;
+  height: 200px;
+  width: 185px; }
+
+#foto:hover {
+  transform: scale(1.1); }
+
+#carouselExampleIndicators {
+  text-align: center;
+  overflow: hidden;
+  background-color: #06174d;
+  margin-bottom: 50px;
+  height: 400px;
+  width: auto; }
+
+.card {
+  margin-top: 50px;
+  display: flex;
+  height: 500px;
+  width: auto; }
+  .card h5, .card p {
+    color: black; }
+  .card .card-body {
+    background-color: white; }
+
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.carrusel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.carta {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.carousel2 {
+  height: 100px;
+  width: auto; }
+
+.asd, *, #logoHeader, #footer2, #carouselExampleIndicators {
+  padding: 0;
+  margin: 0; }
 
 #logos {
   width: 50px;

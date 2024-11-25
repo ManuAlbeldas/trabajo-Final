@@ -168,10 +168,10 @@ h4{
     margin-top: 50px;
     display: flex;
     h5, p{
-        color: white;
+        color: black;
     }
     .card-body{
-        background-color: black;
+        background-color: white;
     }
     @include medidas(500px, auto)
 }

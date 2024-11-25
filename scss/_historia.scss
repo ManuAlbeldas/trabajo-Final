@@ -28,13 +28,29 @@
     margin-right: 40px;
     margin-bottom: 30px;
 }
+
+.card-body{
+    background-color: white;
+    h5, p{
+        color: black;
+    }
+}
+
 .principal{
     display: flex;
     justify-content: space-between;
 }
-#representacion{
-    @include medidas(600px, 100%)
+
+.representacion-padre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #representacion{
+        @include medidas(50%, 50%);
+        border-radius: 8px;
+    }
 }
+
 
 #goleadores{
     margin-bottom: 10px;
@@ -398,7 +414,7 @@
     #divGoleadores-hijo-2{
         display: none;
     }
-    
+
     .grid-sobrechampions{
         display: grid;
         grid-template-columns: 1fr;
