@@ -1498,6 +1498,11 @@ h4 {
     height: 150px;
     width: 300px; } }
 
+.tabla-padre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
 #logos {
   width: 50px;
   height: 50px; }
@@ -1513,8 +1518,7 @@ h4 {
 
 #logoAtalanta {
   height: 80px;
-  width: 80px;
-  transform: translateX(-14px); }
+  width: 80px; }
 
 #logoBO4 {
   width: 80px;
@@ -1535,7 +1539,8 @@ h4 {
   font-size: 15px;
   color: white;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0; }
 
 h5 {
   font-size: 15px;
@@ -1619,5 +1624,42 @@ input[type="checkbox"] {
   color: black; }
 
 #tabla {
-  width: 70%;
-  transform: translateX(220px); }
+  width: 100%;
+  margin: 3%; }
+
+@media screen and (max-width: 768px) {
+  .table {
+    padding: 0; }
+  .table > :not(caption) > * > * {
+    padding: 4px; }
+  #pg, #pe, #pg {
+    display: none; }
+  .btn-desplegable {
+    padding: 4px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 8px;
+    margin: 10px 0; }
+  #logos {
+    width: 20px;
+    height: 20px; }
+  #logoMonaco {
+    width: 20px;
+    height: 20px;
+    transform: translateX(10px); }
+  #logoBrest {
+    width: 20px;
+    height: 20px; }
+  #logoAtalanta {
+    height: 20px;
+    width: 20px; }
+  #logoBO4 {
+    width: 20px;
+    height: 20px;
+    transform: translateX(-14px); }
+  #logoBologna {
+    width: 20px;
+    height: 20px;
+    transform: translateX(-14px) translateY(10px); } }
