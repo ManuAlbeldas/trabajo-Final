@@ -564,10 +564,53 @@ section h2 {
       #cartaNoticia .card-body .card-text {
         font-size: 10px; } }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) and (min-width: 500px) {
   #Informe {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  #aviso14 {
+    height: 250px;
+    width: 430px; }
+  #cartaNoticia {
+    margin: 4%;
+    border: 0;
+    height: 300px;
+    width: 250px; }
+    #cartaNoticia .card-img-top {
+      height: 120px; }
+    #cartaNoticia .card-body {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px; }
+      #cartaNoticia .card-body .card-title {
+        font-size: 10px; }
+      #cartaNoticia .card-body .card-text {
+        font-size: 10px; } }
+
+@media screen and (max-width: 499px) {
+  #Informe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  #aviso14 {
+    height: 170px;
+    width: 300px; }
+  #cartaNoticia {
+    margin: 4%;
+    border: 0;
+    height: 300px;
+    width: 250px; }
+    #cartaNoticia .card-img-top {
+      height: 120px; }
+    #cartaNoticia .card-body {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px; }
+      #cartaNoticia .card-body .card-title {
+        font-size: 10px; }
+      #cartaNoticia .card-body .card-text {
+        font-size: 10px; } }
 
 .body {
   background-image: url(../assets/fondo.png);

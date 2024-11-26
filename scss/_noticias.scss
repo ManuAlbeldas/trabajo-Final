@@ -75,9 +75,63 @@
     }
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 767px) and (min-width: 500px){
     #Informe{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
+    #aviso14{
+        @include medidas(250px, 430px);
+    }
+
+    #cartaNoticia{
+    margin: 4%;
+        border: 0;
+        @include medidas(300px, 250px);
+        .card-img-top{
+            height: 120px;
+        }
+        .card-body{
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            .card-title{
+                font-size: 10px;
+            }
+            .card-text{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px){
+    #Informe{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #aviso14{
+        @include medidas(170px, 300px);
+    }
+    #cartaNoticia{
+        margin: 4%;
+            border: 0;
+            @include medidas(300px, 250px);
+            .card-img-top{
+                height: 120px;
+            }
+            .card-body{
+                background-color: white;
+                border-radius: 10px;
+                padding: 10px;
+                .card-title{
+                    font-size: 10px;
+                }
+                .card-text{
+                    font-size: 10px;
+                }
+            }
+        }
 }
