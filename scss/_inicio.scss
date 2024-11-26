@@ -82,17 +82,10 @@ header{
     font-size: 20px;
     color: white;
 }
-footer{
-    background-color: #000246;
-}
+
 h4{
     margin-left: 20px;
     color: black;
-}
-.redes{
-    border-radius: 100%;
-    transform: translate(-1000%, 280%);
-    @include medidas(30px, 30px)
 }
 .maintotal{
     width: 100%;
@@ -106,33 +99,14 @@ h4{
     align-items: center;
     justify-content: space-around;
 }
-#terminos{
-    margin-right: 30%;
-    margin-left: 30%;
-    margin-top: 50px;
-    color: white;
-    position: absolute;
-    transform: translate(0%, -170px);
-    font-size: 11px;
-    font-weight: bold;
-    text-align: center;
-}
+
 #imgfinal{
     height: 600px;
     width: 100%;
     display: block;
     @include medidas(600px, 100%)
 }
-#footer2{
-    @extend .asd;
-    text-align: center;
-    position: relative;
-    @include medidas(100%, auto)
-}
-#Siguenos{
-    transform: translate(-41%, 630%);
-    color: aliceblue;
-}
+
 #proximosPartidos{
     @include medidas(auto, 60px)
 }
@@ -275,4 +249,149 @@ h4{
     margin-left: 90px;
     height: 350px;
     width: 540px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px){
+    
+    #mejores{
+        @include medidas(300px, 585px);
+        margin-top: 4%;
+    }
+    
+    #tendencia{
+        font-size: 13px;
+    }
+
+    #foto{
+        @include medidas(170px, 155px);
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 769px){
+    
+    #mejores{
+        @include medidas(200px, 355px);
+        margin-top: 4%;
+    }
+    
+    #noticia{
+        @include medidas(60px, 100px)
+    }
+
+    #tendencia{
+        font-size: 13px;
+    }
+
+    #foto{
+        @include medidas(120px, 105px);
+    }
+
+    .card{
+        @include medidas(60px, 60px)
+    }
+
+    .card-img-top{
+        height: 120px;
+    }
+    
+    .card-title{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px){
+
+    #mejores{
+        @include medidas(180px, 335px);
+        margin-top: 4%;
+    }
+    
+    .contenedor{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #noticia{
+        @include medidas(50px, 90px)
+    }
+
+    #tendencia{
+        font-size: 9px;
+    }
+
+    #foto{
+        @include medidas(120px, 105px);
+    }
+
+    #carouselExampleIndicators{
+        @include medidas(320px, auto)
+    }
+
+    .card{
+        @include medidas(60px, 60px)
+    }
+
+    .card-img-top{
+        height: 90px;
+    }
+    
+    .card-title{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 320px){
+    .maintotal{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #mejores{
+        @include medidas(150px, 305px);
+        margin-left: 0;
+        margin-top: 4%;
+    }
+    
+    .contenedor{
+        width: 90%;
+    }
+
+    #noticia{
+        @include medidas(60px, 100px)
+    }
+
+    #tendencia{
+        font-size: 10px;
+    }
+
+    #foto{
+        @include medidas(100px, 85px);
+    }
+
+    .imgs{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #carouselExampleIndicators{
+        @include medidas(200px, auto)
+    }
+
+    .card{
+        @include medidas(60px, 70px)
+    }
+
+    .card-img-top{
+        width: 10px;
+        height: 50px;
+    }
+    
+    .card-title{
+        font-size: 5px;
+    }
 }

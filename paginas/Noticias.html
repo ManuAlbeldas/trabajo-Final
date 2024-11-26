@@ -15,24 +15,35 @@
     <title>Noticias</title>
 </head>
 <body class="cuerpo">
-    <header class="header">
-        <nav class="menu">
-          <ul>
+  <header class="header">
+    <nav class="padre-menu">
+        <ul>
             <a href="../index.html"><img id="logoHeader" src="../assets/logo blanco.png" alt=""></a>
-            <li><a href="../paginas/equipos.html">Equipos</a></li>
-            <li><a href="../paginas/highlights.html">Highlights</a></li>
-            <li><a href="../paginas/historia.html">Historia</a></li>
-            <li><a href="../paginas/pagN1.html">Clasificacion</a></li>
-            <li><a href="../paginas/sobre.html">Sobre</a></li>
-            <li><a href="../paginas/registro.html">Regristro</a></li>
-            <li><a href="../paginas/tienda.html">Tienda</a></li>
-          </ul>
-        </nav>
-      </header>
-      <h2 id="noti">Noticias</h2>
+            <li id="menu-equipos"><a href="../paginas/equipos.html">Equipos</a></li>
+            <li id="menu-highlights"><a href="../paginas/highlights.html">Highlights</a></li>
+            <li id="menu-historia"><a href="../paginas/historia.html">Historia</a></li>
+            <li id="menu-clasificacion"><a href="../paginas/pagN1.html">Clasificacion</a></li>
+            <li id="menu-sobre"><a href="../paginas/Noticias.html">Noticias</a></li>
+            <li id="menu-registro"><a href="../paginas/registro.html">Registro</a></li>
+            <li id="menu-tienda"><a href="../paginas/tienda.html">Tienda</a></li>
+            <li class="menu-desplegable-padre">Más... 
+                <ul>
+                    <li id="menu-equipos-hijo"><a href="../paginas/equipos.html">Equipos</a></li>
+                    <li id="menu-highlights-hijo"><a href="../paginas/highlights.html">Highlights</a></li>
+                    <li id="menu-historia-hijo"><a href="../paginas/historia.html">Historia</a></li>
+                    <li id="menu-clasificacion-hijo"><a href="../paginas/pagN1.html">Clasificacion</a></li>
+                    <li id="menu-noticias-hijo"><a href="../paginas/Noticias.html">Noticias</a></li>
+                    <li id="menu-registro-hijo"><a href="../paginas/registro.html">Registro</a></li>
+                    <li id="menu-tienda-hijo"><a href="../paginas/tienda.html">Tienda</a></li>
+                </ul>
+            </li> 
+        </ul>
+    </nav>
+</header>
+      <h2 id="bannertexto">Noticias</h2>
           <div id="Informe">
             <a href="https://es.uefa.com/uefachampionsleague/news/0291-1bdd180b044a-34bab8b0e2e0-1000--estado-de-forma-de-los-equipos-de-la-champions-league-res/"><img id="aviso14" src="../assets/aviso 1.jpg" alt=""></a>
-            <div id="cartaNoticia" class="card" style="width: 18rem;">
+            <div id="cartaNoticia" class="card">
                 <a href="https://es.uefa.com/uefachampionsleague/news/0293-1c619246fb0a-9c35027a13b5-1000--fantasy-football-de-la-champions-league-elecciones-populares/"><img src="../assets/miniavisos1.jpeg" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h5 class="card-title">Fantasy Elecciones populares</h5>
@@ -40,7 +51,7 @@
 
                 </div>
               </div>
-              <div id="cartaNoticia" class="card" style="width: 18rem;">
+              <div id="cartaNoticia" class="card">
                 <a href="https://es.uefa.com/uefachampionsleague/news/0293-1c60e6aa08d2-85c94a763c87-1000--que-ver-en-cada-partido-de-la-quinta-jornada-de-la-champi/"><img src="../assets/miniavisos2.jpg" class="card-img-top" alt="..."></a>  
                 <div class="card-body">
                   <h5 class="card-title">Previa de los partidos de la jornada 5</h5>
@@ -50,15 +61,14 @@
               </div>
           </div>
           <div id="Informe">
-            <div id="cartaNoticia" class="card" style="width: 18rem;">
+            <div id="cartaNoticia" class="card">
                 <a href="https://es.uefa.com/uefachampionsleague/news/0293-1c5fc033f4cf-631b3cb80410-1000--quien-deberia-ser-mi-capitan-en-el-fantasy-football-de-la-qu/"><img src="../assets/miniavisos3.jpg" class="card-img-top" alt="..."></a> 
                 <div class="card-body">
                   <h5 class="card-title">Fantasy revisa la mejor opcion para capitan</h5>
                   <p class="card-text">Raphinha, Erling Haaland, Mohamed Salah y Serhou Guirassy figuran entre los principales aspirantes a la capitanía para la quinta jornada de la fase liga.</p>
-                 
                 </div>
               </div>
-              <div id="cartaNoticia" class="card" style="width: 18rem;">
+              <div id="cartaNoticia" class="card">
                 <a href="https://es.uefa.com/uefachampionsleague/news/0293-1c5d805c3fa9-c0356aad5b15-1000--datos-y-estadisticas-del-liverpool-real-madrid-de-la-uefa-c/"><img src="../assets/miniavisos4.jpg" class="card-img-top" alt="..."></a> 
                 <div class="card-body">
                   <h5 class="card-title">Datos y estadísticas del Liverpool - Real Madrid </h5>
@@ -70,7 +80,7 @@
           </div>
           <div id="Informe">
             <a href="https://es.uefa.com/uefachampionsleague/match/2041998--liverpool-vs-real-madrid/"><img id="aviso14" src="../assets/aviso 3.jpg" alt=""></a>
-            <div id="cartaNoticia" class="card" style="width: 18rem;">
+            <div id="cartaNoticia" class="card">
               <a href="https://es.uefa.com/uefachampionsleague/news/0293-1c5d2de6b2d3-660b93006c73-1000--datos-y-estadisticas-del-barcelona-brest-de-la-uefa-champi/"><img src="../assets/miniavisos5.jpg" class="card-img-top" alt="..."></a> 
                 <div class="card-body">
                   <h5 class="card-title">Datos y estadísticas del Barcelona - Brest</h5>
@@ -78,7 +88,7 @@
                  
                 </div>
               </div>
-              <div id="cartaNoticia" class="card" style="width: 18rem;">
+              <div id="cartaNoticia" class="card">
                 <a href="https://es.uefa.com/uefachampionsleague/news/0293-1c4959e5e477-e75232fa8f13-1000--analisis-de-rendimiento-de-la-champions-league-como-la-valen/"><img src="../assets/miniavisos6.jpg" class="card-img-top" alt="..."></a> 
                 <div class="card-body">
                   <h5 class="card-title">Análisis de rendimiento, cómo la valentía del Milan superó al Madrid</h5>
@@ -88,7 +98,7 @@
               </div>
           </div>
           <div id="Informe">
-            <div id="cartaNoticia" class="card" style="width: 18rem;">
+            <div id="cartaNoticia" class="card">
               <a href="https://es.uefa.com/uefachampionsleague/news/0293-1c48a7a9abc6-922f598ab57e-1000--momentos-priceless-de-la-semana-brillan-gyokeres-luis-diaz/"><img src="../assets/miniavisos7.jpg" class="card-img-top" alt="..."></a> 
                 <div class="card-body">
                   <h5 class="card-title">Momentos Priceless de la semana: brillan Gyökeres, Luis Díaz y Vanaken</h5>
@@ -96,7 +106,7 @@
                  
                 </div>
               </div>
-              <div id="cartaNoticia" class="card" style="width: 18rem;">
+              <div id="cartaNoticia" class="card">
                 <a href="https://es.uefa.com/uefachampionsleague/news/0293-1c4745810806-19dd7bed37e9-1000--in-the-zone-asi-contuvo-el-inter-al-arsenal/"><img src="../assets/miniavisos8.jpg" class="card-img-top" alt="..."></a> 
                 <div class="card-body">
                   <h5 class="card-title">In the Zone: así contuvo el Inter al Arsenal</h5>
@@ -106,37 +116,56 @@
               </div>
               <a href="https://es.uefa.com/uefachampionsleague/match/2041990--bayern-munchen-vs-paris/"><img id="aviso14" src="../assets/aviso 4.jpg" alt=""></a>
           </div>
-      <footer>
-        <br>
-        <br>
-        <nav class="menu">
-          <ul>
-            <a href="../index.html"><img id="logoHeader" src="../assets/logo blanco.png" alt=""></a>
-            <li><a href="../paginas/equipos.html">Equipos</a></li>
-            <li><a href="../paginas/highlights.html">Highlights</a></li>
-            <li><a href="../paginas/historia.html">Historia</a></li>
-            <li><a href="../paginas/pagN1.html">Clasificacion</a></li>
-            <li><a href="../paginas/sobre.html">Sobre</a></li>
-            <li><a href="../paginas/registro.html">Regristro</a></li>
-            <li><a href="../paginas/tienda.html">Tienda</a></li>
-          </ul>
-        </nav>
-          <div id="footer2">
-            <h6 id="Siguenos">Siguenos en:</h6>
-            <a href="https://x.com/UEFAcom_es"><img class="redes" src="../assets/x.png" alt=""></a>
-            <a href="https://www.facebook.com/ChampionsLeague/"><img class="redes" src="../assets/facebook.jpg" alt=""></a>
-            <a href="https://www.instagram.com/championsleague/"><img class="redes" src="../assets/instagram.jpg" alt=""></a>
-            <a href="https://www.youtube.com/uefatv"><img class="redes" src="../assets/youtube.jpg" alt=""></a>
-            <a href="https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?mt=8&path=apps%2fucl"><img id="store" src="../assets/appstore.png" alt=""></a>
-            <a href="https://play.google.com/store/apps/details?id=com.uefa.ucl&pli=1"><img id="store" src="../assets/googleplay.jpg" alt=""></a>
-            <img id="imgfinal" src="../assets/footer.jpg" alt="">
-            
-            <p id="terminos">© 1998-2024 UEFA. All rights reserved.
-              La palabra UEFA, el logo de la UEFA y todas las marcas relacionadas con las competiciones de la UEFA están
-              protegidas por las marcas registradas y/o por el copyright de UEFA. Se prohíbe el uso de estas marcas
-              registradas para uso comercial. El uso de UEFA.com significa la aceptación de sus Términos, Condiciones y
-              Política de Privacidad.</p>
-          </div>
+          <footer class="footer">
+            <nav class="padre-menu">
+                <ul>
+                    <a href="../index.html"><img id="logoHeader" src="../assets/logo blanco.png" alt=""></a>
+                    <li id="menu-equipos"><a href="../paginas/equipos.html">Equipos</a></li>
+                    <li id="menu-highlights"><a href="../paginas/highlights.html">Highlights</a></li>
+                    <li id="menu-historia"><a href="../paginas/historia.html">Historia</a></li>
+                    <li id="menu-clasificacion"><a href="../paginas/pagN1.html">Clasificacion</a></li>
+                    <li id="menu-sobre"><a href="../paginas/sobre.html">Sobre</a></li>
+                    <li id="menu-registro"><a href="../paginas/registro.html">Registro</a></li>
+                    <li id="menu-tienda"><a href="../paginas/tienda.html">Tienda</a></li>
+                    <li class="menu-desplegable-padre">Más... 
+                        <ul>
+                            <li id="menu-equipos-hijo"><a href="../paginas/equipos.html">Equipos</a></li>
+                            <li id="menu-highlights-hijo"><a href="../paginas/highlights.html">Highlights</a></li>
+                            <li id="menu-historia-hijo"><a href="../paginas/historia.html">Historia</a></li>
+                            <li id="menu-clasificacion-hijo"><a href="../paginas/pagN1.html">Clasificacion</a></li>
+                            <li id="menu-sobre-hijo"><a href="../paginas/sobre.html">Sobre</a></li>
+                            <li id="menu-registro-hijo"><a href="../paginas/registro.html">Registro</a></li>
+                            <li id="menu-tienda-hijo"><a href="../paginas/tienda.html">Tienda</a></li>
+                        </ul>
+                    </li> 
+                </ul>
+            </nav>
+            <div class="footer-hijo">
+                <div class="redes-padre">
+                    <div id="redes-hijo1">
+                        <h6 id="Siguenos">Siguenos en:</h6>
+                    </div>
+                    <div id="redes-hijo2">
+                        <a href="https://x.com/UEFAcom_es"><img class="redes" src="../assets/x.png" alt=""></a>
+                        <a href="https://www.facebook.com/ChampionsLeague/"><img class="redes" src="../assets/facebook.jpg" alt=""></a>
+                        <a href="https://www.instagram.com/championsleague/"><img class="redes" src="../assets/instagram.jpg" alt=""></a>
+                        <a href="https://www.youtube.com/uefatv"><img class="redes" src="../assets/youtube.jpg" alt=""></a>
+                    </div>
+                </div>
+                <br>
+                <div class="terminos-y-condiciones-padre">
+                    <p id="terminos-hijo">© 1998-2024 UEFA. All rights reserved.
+                        La palabra UEFA, el logo de la UEFA y todas las marcas relacionadas con las competiciones de la UEFA están
+                        protegidas por las marcas registradas y/o por el copyright de UEFA. Se prohíbe el uso de estas marcas
+                        registradas para uso comercial. El uso de UEFA.com significa la aceptación de sus Términos, Condiciones y
+                        Política de Privacidad.</p>
+                </div>
+                <br>
+                <div class="tiendavirtual-padre">
+                    <a href="https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?mt=8&path=apps%2fucl"><img id="store" src="../assets/appstore.png" alt=""></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.uefa.ucl&pli=1"><img id="store" src="../assets/googleplay.jpg" alt=""></a>
+                </div>
+            </div>
         </footer>
 </body>
 </html>
