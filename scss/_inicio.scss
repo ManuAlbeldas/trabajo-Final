@@ -242,8 +242,16 @@ h4{
     border-radius: 100%;
     transform: translate(-220%, -310px);
 }
+
+
+#contJugadores{
+    width: 600px;
+    
+}
+
 #cont_CampoDeJuego{
     display: flex;
+    justify-content: space-between;
 }
 #imgAlLadoDELcAMPO{
     margin-left: 90px;
@@ -264,6 +272,83 @@ h4{
 
     #foto{
         @include medidas(170px, 155px);
+    }
+    .padre-jugadores{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #cont_CampoDeJuego{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #jugador1{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(700%, -1125%);
+    }
+    #jugador2{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(350%, -1250%);
+    }
+    #jugador3{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(370%, -1185%);
+    }
+    #jugador4{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(470%, -1185%);
+    }
+    #jugador5{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(500%, -1250%);
+    }
+    #jugador6{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(140%, -1310%);
+    }
+    #jugador7{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-80%, -1430%);
+    }
+    #jugador8{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(40%, -1430%);
+    }
+    #jugador9{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-355%, -1630%);
+    }
+    #jugador10{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-300%, -1700%);
+    }
+    #jugador11{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-240%, -1630%);
     }
 }
 
@@ -296,6 +381,83 @@ h4{
     
     .card-title{
         font-size: 14px;
+    }
+    #cont_CampoDeJuego{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .padre-jugadores{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #jugador1{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(700%, -1125%);
+    }
+    #jugador2{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(350%, -1250%);
+    }
+    #jugador3{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(370%, -1185%);
+    }
+    #jugador4{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(470%, -1185%);
+    }
+    #jugador5{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(500%, -1250%);
+    }
+    #jugador6{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(140%, -1310%);
+    }
+    #jugador7{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-80%, -1430%);
+    }
+    #jugador8{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(40%, -1430%);
+    }
+    #jugador9{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-355%, -1630%);
+    }
+    #jugador10{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-300%, -1700%);
+    }
+    #jugador11{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-240%, -1630%);
     }
 }
 
@@ -339,6 +501,84 @@ h4{
     
     .card-title{
         font-size: 10px;
+    }
+
+    #cont_CampoDeJuego{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .padre-jugadores{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #jugador1{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(700%, -1125%);
+    }
+    #jugador2{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(350%, -1250%);
+    }
+    #jugador3{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(370%, -1185%);
+    }
+    #jugador4{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(470%, -1185%);
+    }
+    #jugador5{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(500%, -1250%);
+    }
+    #jugador6{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(140%, -1310%);
+    }
+    #jugador7{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-80%, -1430%);
+    }
+    #jugador8{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(40%, -1430%);
+    }
+    #jugador9{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-355%, -1630%);
+    }
+    #jugador10{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-300%, -1700%);
+    }
+    #jugador11{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        transform: translate(-240%, -1630%);
     }
 }
 
@@ -393,5 +633,25 @@ h4{
     
     .card-title{
         font-size: 5px;
+    }
+
+    #cont_CampoDeJuego{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #campodejuego{
+        display: none;
+    }
+
+    .padre-jugadores{
+        display: none;
+    }
+
+    #imgAlLadoDELcAMPO{
+        margin-left: 90px;
+        height: 150px;
+        width: 300px;
     }
 }

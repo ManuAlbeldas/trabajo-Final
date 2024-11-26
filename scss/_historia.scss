@@ -243,6 +243,14 @@
         width: 240px;
         height: 100%;
     }
+
+    .divGoleadores{
+        #divGoleadores-hijo-2{
+            img{
+                @include medidas(120px, 160px);
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px){
@@ -250,33 +258,30 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
-    }
-
-    .banner-padre{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0;
-    }
-
-    .tarjetas{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin: 5px;
-        padding-left: 0;
-        padding-right: 0;
-        margin-bottom: 30px;
-        .card{
-            width: 240px;
-            .card-body{
-                .card-title{
-                    font-size: 15px;
-                }
-                .card-text{
-                    font-size: 12px;
+        .banner-padre{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0;
+        }
+        .tarjetas{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 5px;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 30px;
+            .card{
+                width: 240px;
+                .card-body{
+                    .card-title{
+                        font-size: 15px;
+                    }
+                    .card-text{
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -285,13 +290,13 @@
     .divGoleadores{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
         #divGoleadores-hijo-1{
             width: 100%;
         }
         #divGoleadores-hijo-2{
-            img{
-                @include medidas(80px, 120px);
-            }
+            display: none;
         }
     }
 
@@ -432,46 +437,45 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
-    }
-
-    .banner-padre{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0;
-    }
-
-    #encabezado{
-        margin-top: 20px;
-        @include medidas(325px, 300px)
+        .banner-padre{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0;
+        }
+        #encabezado{
+            margin-top: 20px;
+            @include medidas(325px, 300px)
+        
+        }
     
-    }
-
-    .tarjetas{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        margin: 5px;
-        margin-bottom: 30px;
-        .card{
-            width: 300px;
-            margin: 20px;
-            .card-img-top{
-                height: 180px;
-            }
-            .card-body{
-                .card-title{
-                    font-size: 15px;
+        .tarjetas{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            margin: 5px;
+            margin-bottom: 30px;
+            .card{
+                width: 300px;
+                margin: 20px;
+                .card-img-top{
+                    height: 180px;
                 }
-                .card-text{
-                    font-size: 12px;
+                .card-body{
+                    .card-title{
+                        font-size: 15px;
+                    }
+                    .card-text{
+                        font-size: 12px;
+                    }
                 }
             }
         }
     }
+
+
 
     #divGoleadores-hijo-1{
         width: 100%;
@@ -513,5 +517,40 @@
     #trofeo{
         width: 120px;
         height: 100%;
+    }
+
+    .tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 5px;
+        margin-bottom: 30px;
+        .card{
+            width: 300px;
+            margin: 20px;
+            .card-img-top{
+                height: 180px;
+            }
+            .card-body{
+                .card-title{
+                    font-size: 15px;
+                }
+                .card-text{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .divGoleadores{
+        #divGoleadores-hijo-1{
+            img{
+                @include medidas(300px, 300px);
+            }
+            
+        }
+        #divGoleadores-hijo-2{
+            display: none;
+        }
     }
 }
