@@ -502,6 +502,7 @@ section h2 {
 
 #Informe {
   display: flex;
+  justify-content: center;
   margin-left: 20px;
   margin-bottom: 20px; }
 
@@ -513,7 +514,11 @@ section h2 {
 
 #cartaNoticia {
   margin-top: 0;
-  margin-right: 10px; }
+  margin-right: 10px;
+  height: 400px;
+  width: 400px; }
+  #cartaNoticia .card-body {
+    border-radius: 10px; }
 
 .cuerpo {
   background-image: url(../assets/fondo.png);
@@ -522,8 +527,47 @@ section h2 {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-#noti {
-  color: white; }
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  #aviso14 {
+    height: 300px;
+    width: 500px; }
+  #cartaNoticia {
+    margin-top: 0;
+    margin-right: 10px;
+    border: 0;
+    height: 300px;
+    width: 300px; }
+    #cartaNoticia .card-body {
+      background-color: white;
+      border-radius: 10px; }
+      #cartaNoticia .card-body .card-text {
+        font-size: 13px; } }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  #aviso14 {
+    height: 200px;
+    width: 350px; }
+  #cartaNoticia {
+    margin-top: 0;
+    margin-right: 10px;
+    border: 0;
+    height: 100px;
+    width: 200px; }
+    #cartaNoticia .card-img-top {
+      height: 80px; }
+    #cartaNoticia .card-body {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px; }
+      #cartaNoticia .card-body .card-title {
+        font-size: 10px; }
+      #cartaNoticia .card-body .card-text {
+        font-size: 10px; } }
+
+@media screen and (max-width: 1023px) {
+  #Informe {
+    display: flex;
+    flex-wrap: wrap; } }
 
 .body {
   background-image: url(../assets/fondo.png);
@@ -1085,6 +1129,104 @@ h4 {
   margin-left: 90px;
   height: 350px;
   width: 540px; }
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  #mejores {
+    height: 300px;
+    width: 585px;
+    margin-top: 4%; }
+  #tendencia {
+    font-size: 13px; }
+  #foto {
+    height: 170px;
+    width: 155px; } }
+
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+  #mejores {
+    height: 200px;
+    width: 355px;
+    margin-top: 4%; }
+  #noticia {
+    height: 60px;
+    width: 100px; }
+  #tendencia {
+    font-size: 13px; }
+  #foto {
+    height: 120px;
+    width: 105px; }
+  .card {
+    height: 60px;
+    width: 60px; }
+  .card-img-top {
+    height: 120px; }
+  .card-title {
+    font-size: 14px; } }
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  #mejores {
+    height: 180px;
+    width: 335px;
+    margin-top: 4%; }
+  .contenedor {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+  #noticia {
+    height: 50px;
+    width: 90px; }
+  #tendencia {
+    font-size: 9px; }
+  #foto {
+    height: 120px;
+    width: 105px; }
+  #carouselExampleIndicators {
+    height: 320px;
+    width: auto; }
+  .card {
+    height: 60px;
+    width: 60px; }
+  .card-img-top {
+    height: 90px; }
+  .card-title {
+    font-size: 10px; } }
+
+@media screen and (max-width: 599px) and (min-width: 320px) {
+  .maintotal {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%; }
+  #mejores {
+    height: 150px;
+    width: 305px;
+    margin-left: 0;
+    margin-top: 4%; }
+  .contenedor {
+    width: 90%; }
+  #noticia {
+    height: 60px;
+    width: 100px; }
+  #tendencia {
+    font-size: 10px; }
+  #foto {
+    height: 100px;
+    width: 85px; }
+  .imgs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+  #carouselExampleIndicators {
+    height: 200px;
+    width: auto; }
+  .card {
+    height: 60px;
+    width: 70px; }
+  .card-img-top {
+    width: 10px;
+    height: 50px; }
+  .card-title {
+    font-size: 5px; } }
 
 #logos {
   width: 50px;
